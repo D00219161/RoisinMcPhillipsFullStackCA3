@@ -12,4 +12,4 @@ const FilmSchema  = new mongoose.Schema({
 
   }, SchemeConfig);
 
-  module.exports.Cake = mongoose.model('Film', FilmSchema);
+  module.exports.Film = mongoose.model('Film', FilmSchema);

@@ -35,7 +35,7 @@ class Films extends React.Component {
           <h1>All Films in the database</h1>
           <ul>
             {this.state.films.map(film => (
-                <li key={`film_${film._id}`}><Link to={`/film/${film._id}`}>{film.title}</Link></li>
+                <li key={`film_${film._id}`}><Link to={`/film/${film._id}`}>{film.Title}</Link></li>
             ))}
           </ul>
           <p><Link to='/add-film'>Add a new Film</Link></p>

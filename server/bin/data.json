@@ -43,8 +43,8 @@
 
 {
     "_id" : ObjectId("5e4bee1fcf61472c387d1d62"),
-    "title" : "Lady Bird",
-    "year" : "2017",
+    "Title" : "Lady Bird",
+    "Year" : "2017",
     "createdAt" : ISODate("2020-02-18T14:01:03.375Z"),
     "updatedAt" : ISODate("2020-02-18T14:01:03.375Z"),
     "__v" : 0

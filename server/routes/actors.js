@@ -39,7 +39,11 @@ router.get('/:id([0-9a-fA-F]{24})', (req, res) => {
 // POST Create a new Actor
 router.post('/', (req, res) => {
   return new Actor({
-    title     : req.body.title,
+    Name    : req.body.Name,
+    DOB     : req.body.DOB,
+    Age     : req.body.Age,
+    Nationality    : req.body.Nationality,
+    Films   : req.body.Films
   })
   .save()
   .then (actor => Actor.populate(actor, {path: '_id'}))
@@ -67,7 +71,11 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
     .findOneAndUpdate(
       {_id: req.params.id},
       {$set: {
-        title  : req.body.title,
+        Name    : req.body.Name,
+        DOB     : req.body.DOB,
+        Age     : req.body.Age,
+        Nationality    : req.body.Nationality,
+        Films   : req.body.Films
       }},
       {new: true}
     )

@@ -28,6 +28,12 @@ const FilmSchema  = new mongoose.Schema({
       validator : value => !validator.isEmpty(value)
     },
 
+    Starring: {
+      type      : String,
+      required  : true,
+      validator : value => !validator.isEmpty(value)
+    },
+    
   }, SchemeConfig);
 
   module.exports.Film = mongoose.model('Film', FilmSchema);

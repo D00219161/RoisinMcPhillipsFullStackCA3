@@ -13,7 +13,8 @@ class AddFilm extends React.Component {
     Title     : '',
     Year      : '',
     Genre     : '',
-    Direcor   : ''
+    Direcor   : '',
+    Starring  : ''
   }
 
   // #######################################################
@@ -53,6 +54,9 @@ class AddFilm extends React.Component {
               
               Film Director:
               <textarea value={this.state.Director} onChange={this.handleDirectorUpdate.bind(this)}></textarea>
+
+              Film Starring:
+              <textarea value={this.state.Starring} onChange={this.handleStarringUpdate.bind(this)}></textarea>
             
               </label>
             </div>
@@ -90,6 +94,10 @@ class AddFilm extends React.Component {
     this.setState({Director: e.target.value || null});
   }
 
+  handleStarringUpdate(e) {
+    this.setState({Starring: e.target.value || null});
+  }
+
   handleSubmit(e) {
 
     // Prevent the default form submit action
@@ -106,7 +114,8 @@ class AddFilm extends React.Component {
         Title     : this.state.Title,
         Year      : this.state.Year,
         Genre     : this.state.Genre,
-        Director  : this.state.Director
+        Director  : this.state.Director,
+        Starring  : this.state.Starring
       })}
     )
       .then (res  => {

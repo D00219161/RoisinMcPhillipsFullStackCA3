@@ -39,7 +39,11 @@ router.get('/:id([0-9a-fA-F]{24})', (req, res) => {
 // POST Create a new Film
 router.post('/', (req, res) => {
   return new Film({
-    title     : req.body.title,
+    Title  : req.body.Title,
+    Year   : reg.body.Year,
+    Genre  : reg.body.Genre,
+    Director : reg.body.Director,
+    Starring : reg.body.Starring
   })
   .save()
   .then (film => Film.populate(film, {path: '_id'}))

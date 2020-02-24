@@ -12,10 +12,11 @@ class App extends React.Component {
         <Films   path='/' />
         <Film    path='/film/:filmID' />
         <AddFilm path='/add-film/' />
-      </Router>
+        </Router>
     );
   }
 
 }
 
 export default App;
+

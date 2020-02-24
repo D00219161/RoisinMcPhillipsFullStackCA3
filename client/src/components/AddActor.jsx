@@ -104,12 +104,12 @@ class AddActor extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        authoredBy: this.state.authoredBy,
-        Name     : this.state.Name,
-        DOB      : this.state.DOB,
-        Age     : this.state.Age,
+        authoredBy   : this.state.authoredBy,
+        Name         : this.state.Name,
+        DOB          : this.state.DOB,
+        Age          : this.state.Age,
         Nationality  : this.state.Nationality,
-        Films  : this.state.Films
+        Films        : this.state.Films
       })}
     )
       .then (res  => {

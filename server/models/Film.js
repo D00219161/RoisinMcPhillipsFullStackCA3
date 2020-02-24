@@ -4,13 +4,25 @@ const validator = require('validator');
 const SchemeConfig = {timestamps: true, skipVersioning: true};
 const FilmSchema  = new mongoose.Schema({
 
-    title: {
+    Title: {
       type      : String,
       required  : true,
       validator : value => !validator.isEmpty(value)
     },
 
-    year: {
+    Year: {
+      type      : String,
+      required  : true,
+      validator : value => !validator.isEmpty(value)
+    },
+
+    Genre: {
+      type      : String,
+      required  : true,
+      validator : value => !validator.isEmpty(value)
+    },
+
+    Director: {
       type      : String,
       required  : true,
       validator : value => !validator.isEmpty(value)

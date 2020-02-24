@@ -67,7 +67,11 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
     .findOneAndUpdate(
       {_id: req.params.id},
       {$set: {
-        title  : req.body.title,
+        Title  : req.body.Title,
+        Year   : reg.body.Year,
+        Genre  : reg.body.Genre,
+        Director : reg.body.Director,
+        Starring : reg.body.Starring
       }},
       {new: true}
     )

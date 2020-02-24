@@ -23,7 +23,8 @@ class Film extends React.Component {
       );
     } else if (!this.state.film) {
       return (
-        <p>Loading films...</p>
+        <p>Loading films...
+        </p>
       );
     } else if (this.state.film.length === 0) {
       return (

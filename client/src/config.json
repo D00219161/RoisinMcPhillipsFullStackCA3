@@ -1,3 +1,4 @@
 {
-  "filmsAPI": ":3000/films"
+  "filmsAPI": ":3000/films",
+  "actorsAPI": ":3000/actors"
 }

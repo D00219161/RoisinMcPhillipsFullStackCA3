@@ -1,58 +1,58 @@
 const express  = require('express');
 const router   = express.Router();
 const mongoose = require('mongoose'); // using to generate ObjectIDs
-const Actor     = require('../models/Actor').Actor;
+const Director     = require('../models/Director').Director;
 
 /**
  * Functionality for this route:
- *  C   POST    /Actors/       Create a new Actor
- *  R   GET     /Actors         Gets an array of all Actors
- *  R   GET     /Actors/:id     Get a single Actor, by ID
- *  U   PUT     /Actors/:id     Update a single Actor, by id
- *  D   DELETE  /Actors/:id     Delete a single Actor, by ID
+ *  C   POST    /Directors/       Create a new Director
+ *  R   GET     /Directors         Gets an array of all Directors
+ *  R   GET     /Directors/:id     Get a single Director, by ID
+ *  U   PUT     /Directors/:id     Update a single Director, by id
+ *  D   DELETE  /Directors/:id     Delete a single Director, by ID
  */
 
-// GET an array of all Actors
+// GET an array of all Directors
 router.get('/', (req, res) => {
     return mongoose
-      .model('Actor')
+      .model('Director')
       .find({})
-      .then (actors => res.json(actors))
+      .then (directors => res.json(directors))
       .catch(err => res
         .status(500)
         .json({ok: false})
       );
   });
 
-  // GET a single Actor by ID
+  // GET a single Director by ID
 router.get('/:id([0-9a-fA-F]{24})', (req, res) => {
   return mongoose
-    .model('Actor')
+    .model('Director')
     .findOne({_id: req.params.id})
-    .then (actor => res.json(actor))
+    .then (director => res.json(director))
     .catch(err => res
       .status(500)
       .json({ok: false})
     );
 });
 
-// POST Create a new Actor
+// POST Create a new Director
 router.post('/', (req, res) => {
-  return new Actor({
+  return new Director({
     title     : req.body.title,
   })
   .save()
-  .then (actor => Actor.populate(actor, {path: '_id'}))
-  .then (actor => res.json(actor))
+  .then (director => Director.populate(director, {path: '_id'}))
+  .then (director => res.json(director))
   .catch(err => res
     .status(400)
     .json({ok: false, error: err.message})
   );
 });
 
-// DELETE Delete a Actor with a given ID
+// DELETE Delete a Director with a given ID
 router.delete('/:id([0-9a-fA-F]{24})', (req, res) => {
-  return Actor
+  return Director
     .deleteOne({_id: req.params.id})
     .then (() => res.json({'ok': true}))
     .catch(err => res
@@ -61,9 +61,9 @@ router.delete('/:id([0-9a-fA-F]{24})', (req, res) => {
     );
 });
 
-// PUT Update a Actor
+// PUT Update a Director
 router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
-  return Actor
+  return Director
     .findOneAndUpdate(
       {_id: req.params.id},
       {$set: {
@@ -71,8 +71,8 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
       }},
       {new: true}
     )
-    .then (actor => Actor.populate(actor, {path: '_id'}))
-    .then (actor => res.json(actor))
+    .then (director => Director.populate(director, {path: '_id'}))
+    .then (director => res.json(director))
     .catch(err => res
       .status(500)
       .json({ok: false})

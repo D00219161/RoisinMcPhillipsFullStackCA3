@@ -40,10 +40,10 @@ router.get('/:id([0-9a-fA-F]{24})', (req, res) => {
 router.post('/', (req, res) => {
   return new Film({
     Title  : req.body.Title,
-    Year   : reg.body.Year,
-    Genre  : reg.body.Genre,
-    Director : reg.body.Director,
-    Starring : reg.body.Starring
+    Year   : req.body.Year,
+    Genre  : req.body.Genre,
+    Director : req.body.Director,
+    Starring : req.body.Starring
   })
   .save()
   .then (film => Film.populate(film, {path: '_id'}))
@@ -72,10 +72,10 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
       {_id: req.params.id},
       {$set: {
         Title  : req.body.Title,
-        Year   : reg.body.Year,
-        Genre  : reg.body.Genre,
-        Director : reg.body.Director,
-        Starring : reg.body.Starring
+        Year   : req.body.Year,
+        Genre  : req.body.Genre,
+        Director : req.body.Director,
+        Starring : req.body.Starring
       }},
       {new: true}
     )

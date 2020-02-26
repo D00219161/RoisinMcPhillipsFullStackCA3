@@ -44,20 +44,31 @@ class AddActor extends React.Component {
 
             <div>
               <label>Actor Name:
-              <textarea value={this.state.Name} onChange={this.handleNameUpdate.bind(this)}></textarea>
+              <input type='text' value={this.state.Name} onChange={this.handleNameUpdate.bind(this)}></input>
+              </label>
+              </div>
 
-              Actor DOB:
-              <textarea value={this.state.DOB} onChange={this.handleDOBUpdate.bind(this)}></textarea>
-              
-              Actor Age:
-              <textarea value={this.state.Age} onChange={this.handleAgeUpdate.bind(this)}></textarea>
-              
-              Actor Nationality:
-              <textarea value={this.state.Nationality} onChange={this.handleNationalityUpdate.bind(this)}></textarea>
+              <div>
+              <label>Actor DOB:
+              <input type='text' value={this.state.DOB} onChange={this.handleDOBUpdate.bind(this)}></input>
+              </label>
+              </div>
 
-              Actor Films:
-              <textarea value={this.state.Films} onChange={this.handleFilmsUpdate.bind(this)}></textarea>
-            
+              <div>
+              <label>Actor Age:
+              <input type='text' value={this.state.Age} onChange={this.handleAgeUpdate.bind(this)}></input>
+              </label>
+              </div>
+
+              <div>
+              <label>Actor Nationality:
+              <input type='text' value={this.state.Nationality} onChange={this.handleNationalityUpdate.bind(this)}></input>
+              </label>
+              </div>
+
+              <div>
+              <label>Actor Films:
+              <input type='text' value={this.state.Films} onChange={this.handleFilmsUpdate.bind(this)}></input>
               </label>
             </div>
 

@@ -44,31 +44,31 @@ class AddFilm extends React.Component {
 
             <div>
               <label>Film Title:
-              <textarea value={this.state.Title} onChange={this.handleTitleUpdate.bind(this)}></textarea>
+              <input type='text' value={this.state.Title} onChange={this.handleTitleUpdate.bind(this)}></input>
               </label>
               </div>
 
               <div>
               <label>Film Year:
-              <textarea value={this.state.Year} onChange={this.handleYearUpdate.bind(this)}></textarea>
+              <input type='text' value={this.state.Year} onChange={this.handleYearUpdate.bind(this)}></input>
               </label>
               </div>
               
               <div>
               <label>Film Genre:
-              <textarea value={this.state.Genre} onChange={this.handleGenreUpdate.bind(this)}></textarea>
+              <input type='text' value={this.state.Genre} onChange={this.handleGenreUpdate.bind(this)}></input>
               </label>
               </div>
 
               <div>
               <label>Film Director:
-              <textarea value={this.state.Director} onChange={this.handleDirectorUpdate.bind(this)}></textarea>
+              <input type='text' value={this.state.Director} onChange={this.handleDirectorUpdate.bind(this)}></input>
               </label>
               </div>
 
               <div>
               <label>Film Starring:
-              <textarea value={this.state.Starring} onChange={this.handleStarringUpdate.bind(this)}></textarea>
+              <input type='text' value={this.state.Starring} onChange={this.handleStarringUpdate.bind(this)}></input>
               </label>
             </div>
 

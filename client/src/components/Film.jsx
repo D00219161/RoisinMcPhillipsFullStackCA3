@@ -34,10 +34,10 @@ class Film extends React.Component {
       return (
         <div>
           <h1>{this.state.film.Title}</h1>
-          <p><title>Year</title>{this.state.film.Year}</p>
-          <p><title>Genre</title>{this.state.film.Genre}</p>
-          <p><title>Director</title>{this.state.film.Director}</p>
-          <p><title>Starring</title>{this.state.film.Starring}</p>
+          <p>{this.state.film.Year}</p>
+          <p>{this.state.film.Genre}</p>
+          <p>{this.state.film.Director}</p>
+          <p>{this.state.film.Starring}</p>
           <Link to='/'>Back to All films</Link>
         </div>
       )

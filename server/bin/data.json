@@ -1,51 +1,326 @@
+//Films Collection
 {
-    "_id" : ObjectId("5e45a0d150b212aaa7b693e7"),
-    "title" : "To All The Boys I Loved Before",
-    "year" : "2018",
-    "updatedAt" : ISODate("2020-02-13T20:42:38.316Z")
+    "Title" : "Little Women",
+    "Year" : "2019",
+    "Genre" : "Drama/Historical Drama",
+    "Director" : "Greta Gerwig",
+    "Starring" : "Saoirse Ronan, Florence Pugh, Eliza Scanlen & Emma Watson"
 }
 
 {
-    "_id" : ObjectId("5e45a0d150b212aaa7b693ea"),
-    "title" : "The Kissing Booth",
-    "year" : "2018",
-    "updatedAt" : ISODate("2020-02-13T20:45:24.762Z")
+    "Title" : "Harley Quinn: Birds of Prey",
+    "Year" : "2020",
+    "Genre" : "Crime/Action",
+    "Director" : "Cathy Yan",
+    "Starring" : "Margot Robbie, Mary Elizabeth Winstead & Jurnee Smollett-Bell"
 }
 
-
 {
-    "_id" : ObjectId("5e45a0d150b212aaa7b693ed"),
-    "title" : "The Duff",
-    "year" : "2015",
-    "updatedAt" : ISODate("2020-02-13T20:48:48.426Z")
+    "Title" : "To All The Boys I Loved Before",
+    "Year" : "2018",
+    "Genre" : "Drama/Teen",
+    "Director" : "Susan Johnson",
+    "Starring" : "Lana Condor, Noah Centineo & Janel Parrish"
 }
 
-
 {
-    "_id" : ObjectId("5e45b1d2e6a7d43054d37413"),
-    "title" : "Clueless",
-    "year" : "1995",
-    "createdAt" : ISODate("2020-02-13T20:30:10.543Z"),
-    "updatedAt" : ISODate("2020-02-13T20:30:10.543Z"),
-    "__v" : 0
-}
-
-
-{
-    "_id" : ObjectId("5e45b1e5c216ef3079d26e1e"),
-    "title" : "Five Feet Apart",
-    "year" : "2019",
-    "createdAt" : ISODate("2020-02-13T20:30:29.621Z"),
-    "updatedAt" : ISODate("2020-02-13T20:30:29.621Z"),
-    "__v" : 0
+    "Title" : "The Kissing Booth",
+    "Year" : "2018",
+    "Genre" : "Teen Romantic Comedy",
+    "Director" : "Vince Marcello",
+    "Starring" : "Joey King, Joel Courtney & Jacob Elordi"
 }
 
 
 {
-    "_id" : ObjectId("5e4bee1fcf61472c387d1d62"),
+    "Title" : "The Duff",
+    "Year" : "2015",
+    "Genre" : "Comedy/Teen",
+    "Director" : "Ari Sandel",
+    "Starring" : "Mae Whitman, Robbie Amell & Bella Thorne"
+}
+
+
+{
+    "Title" : "Clueless",
+    "Year" : "1995",
+    "Genre" : "Romance/Comedy/Teen",
+    "Director" : "Amy Heckerling",
+    "Starring" : "Alicia Silverstone, Stacey Dash & Brittany Murphy"
+}
+
+
+{
+    "Title" : "Five Feet Apart",
+    "Year" : "2019",
+    "Genre" : "Drama",
+    "Director" : "Justin Baldoni",
+     "Starring" : "Cole Sprouse, Haley Lu Richardson & Moises Arias"
+}
+
+
+{
     "Title" : "Lady Bird",
     "Year" : "2017",
-    "createdAt" : ISODate("2020-02-18T14:01:03.375Z"),
-    "updatedAt" : ISODate("2020-02-18T14:01:03.375Z"),
-    "__v" : 0
+    "Genre" : "Drama/Comedy/Indie",
+    "Director" : "Great Gerwig",
+    "Starring" : "Saoirse Ronan, Laurie Metcalf & Tracy Letts"
+
+}
+
+{
+    "Title" : "After",
+    "Year" : "2019",
+    "Genre" : "Teen/Romantic/Drama",
+    "Director" : "Jenny Gage",
+    "Starring" : "Josephine Langford, Hero Fiennes Tiffin & Selma Blair"
+
+}
+
+{
+    "Title" : "Call Me By Your Name",
+    "Year" : "2017",
+    "Genre" : "LGBTQ/Italian",
+    "Director" : "Luca Guadagnino",
+    "Starring" : "Timothée Chalamet, Armie Hammer & Michael Stuhlbarg"
+
+}
+
+{
+    "Title" : "A Fall From Grace",
+    "Year" : "2020",
+    "Genre" : "Crime/Thrillers",
+    "Director" : "Tyler Perry",
+    "Starring" : "Crystal Fox, Phylicia Rashad & Cicely Tyson"
+
+}
+
+{
+    "Title" : "Spy",
+    "Year" : "2015",
+    "Genre" : "Action & Adventure/Action Comedies",
+    "Director" : "Paul Feig",
+    "Starring" : "Melissa McCarthy, Jason Statham & Rose Byrne"
+
+}
+
+{
+    "Title" : "Dirty Dancing",
+    "Year" : "1987",
+    "Genre" : "Classic Romantic/Classic Drama",
+    "Director" : "Emile Ardolino",
+    "Starring" : "Jennifer Grey, Patrick Swayze & Jerry Orbach"
+
+}
+
+{
+    "Title" : "The Perks Of Being A WallFlower",
+    "Year" : "2012",
+    "Genre" : "Teen/Drama/Comedy",
+    "Director" : "Stephen Chbosky",
+    "Starring" : "Logan Lerman, Emma Watson & Ezra Miller"
+
+}
+
+
+//Actors Collection
+{
+    "Name" : "Leonardo DiCaprio",
+    "DOB" : "November 11th, 1974",
+    "Age" : "45 years old",
+    "Nationality" : "American",
+    "Films" : "Titanic, The Revenant & What's Eating Gilbert Grape?"
+}
+
+{
+    "Name" : "Tom Cruise",
+    "DOB" : "July 3rd, 1962",
+    "Age" : "57 years old",
+    "Nationality" : "American",
+    "Films" : "Top Gun, Risky Business & A Few Good Men"
+}
+
+{
+    "Name" : "Will Smith",
+    "DOB" : "September 25th, 1968",
+    "Age" : "51 years old",
+    "Nationality" : "American",
+    "Films" : "The Pursuit of Happyness, Suicide Squad & Independence Day"
+}
+
+{
+    "Name" : "Johnny Depp",
+    "DOB" : "June 9th, 1963",
+    "Age" : "56 years old",
+    "Nationality" : "American",
+    "Films" : "Edward Scissorhands, Pirates Of The Caribbean: The Curse of the Black Pearl & Charlie and the Chocolate Factory"
+}
+
+{
+    "Name" : "Scarlett Johansson",
+    "DOB" : "November 22nd, 1984",
+    "Age" : "35 years old",
+    "Nationality" : "American",
+    "Films" : "The Avengers, Black Widow, Lost In Translation & The Nanny Diaries"
+}
+
+{
+    "Name" : "Mila Kunis",
+    "DOB" : "August 14th, 1983",
+    "Age" : "36 years old",
+    "Nationality" : "American & Ukrainian",
+    "Films" : "Bad Moms, Oz the Great and Powerful, Annie & Black Swan"
+}
+
+{
+    "Name" : "Meryl Streep",
+    "DOB" : "June 22nd, 1949",
+    "Age" : "70 years old",
+    "Nationality" : "American",
+    "Films" : "The Devil Wears Prada, Mamma Mia, It's Complicated & Hope Springs"
+}
+
+{
+    "Name" : "Anne Hathaway",
+    "DOB" : "November 12th, 1982",
+    "Age" : "37 years old",
+    "Nationality" : "American",
+    "Films" : "The Princess Diaries, The Dark Knight Rises, The Intern & Valentine's Day"
+}
+
+{
+    "Name" : "Jennifer Garner",
+    "DOB" : "April 17th, 1972",
+    "Age" : "47 years old",
+    "Nationality" : "American",
+    "Films" : "13 Going on 30, Pearl Harbor, Dude, Where's My Car? & Love, Simon"
+}
+
+{
+    "Name" : "Matthew Broderick",
+    "DOB" : "March 21st, 1962",
+    "Age" : "57 years old",
+    "Nationality" : "American",
+    "Films" : "Ferris Bueller's Day Off, The Lion King, Godzilla & Inspector Gadget"
+}
+
+{
+    "Name" : "Cillian Murphy",
+    "DOB" : "May 25th, 1976",
+    "Age" : "43 years old",
+    "Nationality" : "Irish",
+    "Films" : "Dunkirk, The Dark Knight, & The Wind That Shakes the Barley"
+}
+
+{
+    "Name" : "Barry Keoghan",
+    "DOB" : "October 18th, 1992",
+    "Age" : "27 years old",
+    "Nationality" : "Irish",
+    "Films" : "Stay, '71, American Animals & Black '47"
+}
+
+{
+    "Name" : "Lily Collins",
+    "DOB" : "March 18th, 1989",
+    "Age" : "30 years old",
+    "Nationality" : "American & British",
+    "Films" : "Love, Rosie, Abduction, Tolkien & Extremely Wicked, Shockingly Evil and Vile"
+}
+
+{
+    "Name" : "Sophie Turner",
+    "DOB" : " February 21st, 1996",
+    "Age" : "24 years old",
+    "Nationality" : "British",
+    "Films" : "X-Men: Apocalypse, Time Freak, Dark Phoenix & Josie"
+}
+
+{
+    "Name" : "Kaya Scodelario",
+    "DOB" : "March 13th, 1992",
+    "Age" : "27 years old",
+    "Nationality" : "Brazilian & British",
+    "Films" : "The Maze Runner, Crawl, Clash of the Titans & The Truth About Emanuel"
+}
+
+{
+    "Name" : "Naomi Scott",
+    "DOB" : "May 6th, 1993",
+    "Age" : "26 years old",
+    "Nationality" : "British",
+    "Films" : "Charlie's Angels, Power Rangers, Lemonade Mouth & Aladdin"
+}
+
+//Directors Collection
+{
+    "Name" : "Steven Spielberg",
+    "DOB" : "December 18th, 1946",
+    "Age" : "73 years old",
+    "Nationality" : "American",
+    "Genres" : "Science-Fiction, Adventure, Drama, Fantasy & Musical",
+    "Films" : "War Horse, Duel, Lincoln, Schindler’s List, Saving Private Ryan & E.T. the Extra-Terrestrial"
+}
+
+{
+    "Name" : "Clint Eastwood",
+    "DOB" : "May 31st, 1930",
+    "Age" : "89 years old",
+    "Nationality" : "American",
+    "Genres" : "Drama, Crime, Thriller, Myster & War",
+    "Films" : "American Sniper, Mystic River, Heartbreak Ridge, The Mule & Richard Jewell"
+}
+
+{
+    "Name" : "Tim Burton",
+    "DOB" : "August 25th, 1958",
+    "Age" : "61 years old",
+    "Nationality" : "American",
+    "Genres" : "Fantasy, Comedy, Horror, Adventure & Animation",
+    "Films" : "Alice in Wonderland, Corpse Bride, Beetlejuice, Edward Scissorhands & Planet of the Apes"
+}
+
+{
+    "Name" : "Greta Gerwig ",
+    "DOB" : "August 4th, 1983",
+    "Age" : "36 years old",
+    "Nationality" : "American",
+    "Genres" : "Comedy, Romance, Historical, Drama & Melodrama",
+    "Films" : "Little Women, Lady Bird & Nights and Weekends"
+}
+
+{
+    "Name" : "Lorene Scafaria",
+    "DOB" : "May 1st, 1978",
+    "Age" : "41 years old",
+    "Nationality" : "American",
+    "Genres" : "Drama, Comedy, Triller, Crime & Coming Of Age",
+    "Films" : "Hustlers, The Meddler, Coherence, Nick and Norah's Infinite Playlist & Seeking a Friend for the End of the World"
+}
+
+{
+    "Name" : "Marielle Heller",
+    "DOB" : "October 1st, 1979",
+    "Age" : "40 years old",
+    "Nationality" : "American",
+    "Genres" : "Drama, Crime, Myster, Comedy & Romance",
+    "Films" : "The Diary of a Teenage Girl, A Beautiful Day in the Neighborhood, Can You Ever Forgive Me?, Awesometown & MacGruber"
+}
+
+{
+    "Name" : "Patty Jenkins",
+    "DOB" : "July 24th, 1971",
+    "Age" : "48 years old",
+    "Nationality" : "American",
+    "Genres" : "Superhero, Adventure, War, Action & Drama",
+    "Films" : "Wonder Woman, Wonder Woman 2, Monster & Five"
+}
+
+{
+    "Name" : "Damien Chazelle",
+    "DOB" : "January 19th, 1985",
+    "Age" : "35 years old",
+    "Nationality" : "American",
+    "Genres" : "Drama, Romance, Comedy, History & Musical",
+    "Films" : "La La Land, Whiplash, First Man, 10 Cloverfield Lane & Surrogate"
 }

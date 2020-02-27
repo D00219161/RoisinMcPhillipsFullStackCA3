@@ -83,7 +83,7 @@ class AddActor extends React.Component {
     }
   }
 
-  handleNameeUpdate(e) {
+  handleNameUpdate(e) {
     this.setState({Name: e.target.value || null});
   }
 

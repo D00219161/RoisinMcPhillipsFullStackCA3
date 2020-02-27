@@ -35,7 +35,7 @@ class Actors extends React.Component {
           <h1>All Actors in the database</h1>
           <ul>
             {this.state.actors.map(actor => (
-                <li key={`actor_${actor._id}`}><Link to={`/actor/${actor._id}`}>{actor.title}</Link></li>
+                <li key={`actor_${actor._id}`}><Link to={`/actor/${actor._id}`}>{actor.Name}</Link></li>
             ))}
           </ul>
           <p><Link to='/add-actor'>Add a new Actor</Link></p>

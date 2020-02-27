@@ -34,10 +34,10 @@ class Actor extends React.Component {
       return (
         <div>
           <h1>{this.state.actor.Name}</h1>
-          <p><title>Date Of Birth</title>{this.actor.film.DOB}</p>
-          <p><title>Age</title>{this.actor.film.Age}</p>
-          <p><title>Nationality</title>{this.actor.film.Nationality}</p>
-          <p><title>Films</title>{this.state.actor.Films}</p>
+          <p>{this.actor.DOB}</p>
+          <p>{this.actor.Age}</p>
+          <p>{this.actor.Nationality}</p>
+          <p>{this.state.Films}</p>
           <Link to='/'>Back to All actors</Link>
         </div>
       )

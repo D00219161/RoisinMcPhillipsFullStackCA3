@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "a7e118eb-98c4-4bca-a93a-d45f4732bd95",
+		"name": "RoisinsFilmsAPITest",
+		"description": "Testing my Film, Actor and Director API for this assigment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Films",
+			"item": [
+				{
+					"name": "Get All Films",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/films",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add A Film",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Title\": \"Pearl Harbour\",\n    \"Year\": \"2001\",\n    \"Genre\": \"Historical Drama\",\n    \"Director\": \"Michael Bay\",\n    \"Starring\": \"Ben Affleck, Kate Beckinsale, Josh Harnett & Jennifer Garner\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/films",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"films"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update A Film",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Title\": \"Little Women\",\n    \"Year\": \"2019\",\n    \"Genre\": \"Drama/Historical Drama\",\n    \"Director\": \"Greta Gerwig\",\n    \"Starring\": \"Saoirse Ronan, Florence Pugh, Eliza Scanlen, Emma Watson & Timothée Chalamet\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/films/5e53c722d5bd427d2e1112e6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"films",
+								"5e53c722d5bd427d2e1112e6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A Film",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/films/5e545390e84dbb0bf8ce2a56",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"films",
+								"5e545390e84dbb0bf8ce2a56"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Actors",
+			"item": [
+				{
+					"name": "Get All Actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/actors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add An Actor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Keneti James Fitzgerald Apa\",\n    \"DOB\": \"June 17th, 1997\",\n    \"Age\": \"22 years old\",\n    \"Nationality\": \"New Zealand\",\n    \"Films\": \"A Dog's Purpose, The Hate U Give & I Still Believe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/actors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete An Actor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/actors/5e5457157926a526c802b54b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"actors",
+								"5e5457157926a526c802b54b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update An Actor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Will Smith\",\n    \"DOB\": \"September 25th, 1968\",\n    \"Age\": \"51 years old\",\n    \"Nationality\": \"American\",\n    \"Films\": \"The Pursuit of Happyness, Suicide Squad, Aladdin & Independence Day\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/actors/5e53d52fd5bd427d2e1116a8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"actors",
+								"5e53d52fd5bd427d2e1116a8"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Directors",
+			"item": [
+				{
+					"name": "Get All Directors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/directors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update A Director",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Tim Burton\",\n    \"DOB\": \"August 25th, 1958\",\n    \"Age\": \"61 years old\",\n    \"Nationality\": \"American\",\n    \"Genres\": \"Fantasy, Comedy, Horror, Adventure & Animation\",\n    \"Films\": \"Alice in Wonderland, Corpse Bride, Beetlejuice, Edward Scissorhands, Batman Returns & Planet of the Apes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/directors/5e544a85d5bd427d2e1120b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"directors",
+								"5e544a85d5bd427d2e1120b2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add A Director",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Peter Jackson\",\n    \"DOB\": \"October 31st, 1961\",\n    \"Age\": \"58 years old\",\n    \"Nationality\": \"New Zealand\",\n    \"Genres\": \"Drama, Action, Fantasy, Romance & Supernatural\",\n    \"Films\": \"King Kong, Dead Alive, The Hobbit: An Unexpected Journey, Mortal Engines & The Lovely Bones\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/directors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A Director",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/directors/5e5459237926a526c802b54c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"directors",
+								"5e5459237926a526c802b54c"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

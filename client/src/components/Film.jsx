@@ -1,7 +1,7 @@
 import React              from 'react';
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
-import * as Config        from '../config.json'
+import * as Config        from '../config.json';
 
 class Film extends React.Component {
 

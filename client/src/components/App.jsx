@@ -9,8 +9,8 @@ import AddActor from './AddActor';
 import Directors   from './Directors';
 import Director    from './Director';
 import AddDirector from './AddDirector';
-import Footer   from './Footer'
-
+import Footer   from './Footer';
+import '../scss/main.css';
 class App extends React.Component {
 
   render() {

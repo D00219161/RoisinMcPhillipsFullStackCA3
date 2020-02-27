@@ -8,4 +8,4 @@ Updated and added neccessary data to my App.js file so that I could view both co
 
 Client side I have added my film files - Film.jsx, Films.jsx and AddFilm.jsx - These print out all film data from db to the client and is running on port 3001
 
-I have made my commit messages after each change was made
+I have made my commit messages after each change was made to each file.

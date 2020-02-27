@@ -34,11 +34,11 @@ class Director extends React.Component {
       return (
         <div>
           <h1>{this.state.director.Name}</h1>
-          <p>{this.director.DOB}</p>
-          <p>{this.director.Age}</p>
-          <p>{this.director.Nationality}</p>
-          <p>{this.state.director.Genres}</p>
-          <p>{this.state.director.Films}</p>
+          <p>Date of birth: {this.director.DOB}</p>
+          <p>Age: {this.director.Age}</p>
+          <p>Nationality: {this.director.Nationality}</p>
+          <p>Genre: {this.state.director.Genres}</p>
+          <p>Films: {this.state.director.Films}</p>
           <Link to='/'>Back to All directors</Link>
         </div>
       )

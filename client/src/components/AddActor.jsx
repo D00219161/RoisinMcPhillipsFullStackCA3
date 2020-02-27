@@ -77,7 +77,7 @@ class AddActor extends React.Component {
             </div>
 
           </form>
-          <Link to='/'>Back to All actors</Link>
+          <Link to='/actors'>Back to All actors</Link>
         </div>
       );
     }

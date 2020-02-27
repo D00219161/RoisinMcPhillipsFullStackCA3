@@ -85,7 +85,7 @@ class AddDirector extends React.Component {
             </div>
 
           </form>
-          <Link to='/'>Back to All directors</Link>
+          <Link to='/directors'>Back to All directors</Link>
         </div>
       );
     }

@@ -8,7 +8,7 @@ class NavMenu extends Component {
       <Navbar>
     <Navbar.Brand>Films</Navbar.Brand>
     <Nav className="nav">
-    <Nav.Link href="/films">Home</Nav.Link>
+    <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/actors">Videos</Nav.Link>
       <Nav.Link href="/directors">Contact</Nav.Link>
     </Nav>

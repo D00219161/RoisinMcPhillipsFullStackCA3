@@ -13,7 +13,6 @@ class NavMenu extends Component {
       <Nav.Link href="/directors">Contact</Nav.Link>
     </Nav>
   </Navbar>
-
     );
     
   }

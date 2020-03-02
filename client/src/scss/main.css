@@ -1,13 +1,5 @@
-html {
-  background-color: #ccc;
-}
-
-body {
-  width: auto;
-  background-color: #fff;
-}
-
-main {
-  margin: 0;
+.navbar {
+  background-color: #177C43;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

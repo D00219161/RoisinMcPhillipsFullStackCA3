@@ -1,5 +1,7 @@
 import React    from 'react'; 
 import {Router} from "@reach/router";
+import Navagation from './Navagation';
+import Slider     from './Slider';
 import Films   from './Films';
 import Film    from './Film';
 import AddFilm from './AddFilm';
@@ -17,6 +19,8 @@ class App extends React.Component {
     return (
       <div className='App'>
 
+<Navagation />
+<Slider />
       <Router>
         <Films   path='/' />
         <Film    path='/film/:filmID' />

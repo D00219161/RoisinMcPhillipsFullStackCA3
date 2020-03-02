@@ -9,6 +9,12 @@ const FilmSchema  = new mongoose.Schema({
       required  : true,
       validator : value => !validator.isEmpty(value)
     },
+
+    Image:{
+      type      : Image,
+      required  : true,
+      validator : value => !validator.isEmpty(value)
+    },
    
     Year: {
       type      : String,

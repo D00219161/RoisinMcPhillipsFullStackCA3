@@ -6,9 +6,8 @@ class NavMenu extends Component {
   render() {
     return (
       <Navbar>
-    <Navbar.Brand>Films</Navbar.Brand>
+    <Navbar.Brand><Nav.Link href="/">Films</Nav.Link></Navbar.Brand>
     <Nav className="nav">
-    <Nav.Link href="/">Films</Nav.Link>
       <Nav.Link href="/actors">Actors</Nav.Link>
       <Nav.Link href="/directors">Directors</Nav.Link>
     </Nav>

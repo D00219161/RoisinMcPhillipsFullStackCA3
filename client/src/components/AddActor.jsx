@@ -49,7 +49,7 @@ class AddActor extends React.Component {
               </div>
 
               <div>
-              <label>Actor DOB:
+              <label>Actor Date Of Birth:
               <input type='text' value={this.state.DOB} onChange={this.handleDOBUpdate.bind(this)}></input>
               </label>
               </div>

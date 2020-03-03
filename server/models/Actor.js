@@ -10,7 +10,7 @@ const ActorSchema  = new mongoose.Schema({
       validator : value => !validator.isEmpty(value)
     },
 
-    DOB: {
+    DateOfBirth: {
       type      : String,
       required  : true,
       validator : value => !validator.isEmpty(value)

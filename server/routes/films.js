@@ -40,7 +40,7 @@ router.get('/:id([0-9a-fA-F]{24})', (req, res) => {
 router.post('/', (req, res) => {
   return new Film({
     Title  : req.body.Title,
-    Image  : reg.body.Image,
+    Image  : req.body.Image,
     Year   : req.body.Year,
     Genre  : req.body.Genre,
     Director : req.body.Director,
@@ -73,7 +73,7 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
       {_id: req.params.id},
       {$set: {
         Title  : req.body.Title,
-        Image  : reg.body.Image,
+        Image  : req.body.Image,
         Year   : req.body.Year,
         Genre  : req.body.Genre,
         Director : req.body.Director,

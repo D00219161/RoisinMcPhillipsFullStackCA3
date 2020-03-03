@@ -51,7 +51,7 @@ class AddDirector extends React.Component {
               </div>
 
               <div>
-              <label>Director DOB:
+              <label>Director Date Of Birth:
               <input type='text' value={this.state.DOB} onChange={this.handleDOBUpdate.bind(this)}></input>
               </label>
               </div>

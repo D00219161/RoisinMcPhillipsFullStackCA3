@@ -10,7 +10,13 @@ const ActorSchema  = new mongoose.Schema({
       validator : value => !validator.isEmpty(value)
     },
 
-    DateOfBirth: {
+    Image: {
+      type      : String,
+      required  : true,
+      validator : value => !validator.isEmpty(value)
+    },
+
+    DOB: {
       type      : String,
       required  : true,
       validator : value => !validator.isEmpty(value)
@@ -33,6 +39,12 @@ const ActorSchema  = new mongoose.Schema({
       required  : true,
       validator : value => !validator.isEmpty(value)
     },
+
+    Video: {
+      type      : String,
+      required  : true,
+      validator : value => !validator.isEmpty(value)
+    }
     
   }, SchemeConfig);
 

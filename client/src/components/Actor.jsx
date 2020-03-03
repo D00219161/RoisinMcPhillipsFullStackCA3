@@ -1,7 +1,8 @@
 import React              from 'react';
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
-import * as Config        from '../config.json'
+import * as Config        from '../config.json';
+import {Col} from 'react-bootstrap/';
 
 class Actor extends React.Component {
 
@@ -32,14 +33,27 @@ class Actor extends React.Component {
       );
     } else {
       return (
-        <div>
-          <h1>{this.state.actor.Name}</h1>
+        <Col md={12}>
+      <div className='card mb-4'>
+        <h2 className='card-header'>{this.state.actor.Name}</h2>
+        <div className='row'>
+          <div className='col-12 col-md-3'>
+            <div className='product-image'>
+              <img src={this.state.actor.Image} alt={this.state.actor.Name} />
+            </div>
+          </div>
+          <div className='col-12 col-md-9'>
+            <div className='card-body'></div>
           <p>DOB: {this.state.actor.DOB}</p>
           <p>Age: {this.state.actor.Age}</p>
           <p>Nationality: {this.state.actor.Nationality}</p>
           <p>Films: {this.state.actor.Films}</p>
+          <p><Video><source src={this.state.actor.Video}></source></Video></p>
           <Link to='/actors'>Back to All actors</Link>
+          </div> 
         </div>
+        </div>
+      </Col>
       )
     }
   }

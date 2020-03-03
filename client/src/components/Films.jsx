@@ -31,7 +31,7 @@ class Films extends React.Component {
       );
     } else {
       return (
-        <div>
+        <div className='product-list pt-3 pl-3 pr-3'>
           <h1>All Films in the database</h1>
           <ul>
             {this.state.films.map(film => (

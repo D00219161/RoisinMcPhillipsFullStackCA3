@@ -11,10 +11,12 @@ class AddActor extends React.Component {
 
   state = {
     Name     : '',
+    Image    : '',
     DOB      : '',
     Age     : '',
     Nationality   : '',
-    Films  : ''
+    Films  : '',
+    Video  : ''
   }
 
   // #######################################################
@@ -49,6 +51,12 @@ class AddActor extends React.Component {
               </div>
 
               <div>
+              <label>Actor Image:
+              <input type='text' value={this.state.Image} onChange={this.handleImageUpdate.bind(this)}></input>
+              </label>
+              </div>
+
+              <div>
               <label>Actor Date Of Birth:
               <input type='text' value={this.state.DOB} onChange={this.handleDOBUpdate.bind(this)}></input>
               </label>
@@ -73,6 +81,12 @@ class AddActor extends React.Component {
             </div>
 
             <div>
+              <label>Actor Video:
+              <input type='text' value={this.state.Video} onChange={this.handleVideoUpdate.bind(this)}></input>
+              </label>
+            </div>
+
+            <div>
               <input type='submit' value='Add Actor' />
             </div>
 
@@ -85,6 +99,10 @@ class AddActor extends React.Component {
 
   handleNameUpdate(e) {
     this.setState({Name: e.target.value || null});
+  }
+
+  handleImageUpdate(e) {
+    this.setState({Image: e.target.value || null});
   }
 
   handleDOBUpdate(e) {
@@ -103,6 +121,10 @@ class AddActor extends React.Component {
     this.setState({Films: e.target.value || null});
   }
 
+  handleVideoUpdate(e) {
+    this.setState({Video: e.target.value || null});
+  }
+
   handleSubmit(e) {
 
     // Prevent the default form submit action
@@ -117,10 +139,12 @@ class AddActor extends React.Component {
       body: JSON.stringify({
         authoredBy   : this.state.authoredBy,
         Name         : this.state.Name,
+        Image        : this.state.Image,
         DOB          : this.state.DOB,
         Age          : this.state.Age,
         Nationality  : this.state.Nationality,
-        Films        : this.state.Films
+        Films        : this.state.Films,
+        Video        : this.state.Video
       })}
     )
       .then (res  => {

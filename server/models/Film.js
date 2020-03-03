@@ -38,7 +38,7 @@ const FilmSchema  = new mongoose.Schema({
       type      : String,
       required  : true,
       validator : value => !validator.isEmpty(value)
-    },
+    }
     
   }, SchemeConfig);
 

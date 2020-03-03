@@ -40,10 +40,12 @@ router.get('/:id([0-9a-fA-F]{24})', (req, res) => {
 router.post('/', (req, res) => {
   return new Actor({
     Name    : req.body.Name,
+    Image   : req.body.Image,
     DOB     : req.body.DOB,
     Age     : req.body.Age,
     Nationality    : req.body.Nationality,
-    Films   : req.body.Films
+    Films   : req.body.Films,
+    Video   : req.body.Video
   })
   .save()
   .then (actor => Actor.populate(actor, {path: '_id'}))
@@ -72,10 +74,12 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
       {_id: req.params.id},
       {$set: {
         Name    : req.body.Name,
+        Image   : req.body.Image,
         DOB     : req.body.DOB,
         Age     : req.body.Age,
         Nationality    : req.body.Nationality,
-        Films   : req.body.Films
+        Films   : req.body.Films,
+        Video   : req.body.Video
       }},
       {new: true}
     )

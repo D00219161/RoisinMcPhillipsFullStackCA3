@@ -48,7 +48,7 @@ class Actor extends React.Component {
           <p>Age: {this.state.actor.Age}</p>
           <p>Nationality: {this.state.actor.Nationality}</p>
           <p>Films: {this.state.actor.Films}</p>
-          <p><Video><source src={this.state.actor.Video}></source></Video></p>
+          <p><source src={this.state.actor.Video}></source></p>
           <Link to='/actors'>Back to All actors</Link>
           </div> 
         </div>

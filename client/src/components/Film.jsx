@@ -2,6 +2,7 @@ import React              from 'react';
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import * as Config        from '../config.json';
+import {Col} from 'react-bootstrap/';
 
 class Film extends React.Component {
 
@@ -32,14 +33,26 @@ class Film extends React.Component {
       );
     } else {
       return (
-        <div>
-          <h1>{this.state.film.Title}</h1>
+        <Col md={12}>
+      <div className='card mb-4'>
+        <h2 className='card-header'>{this.state.film.Title}</h2>
+        <div className='row'>
+          <div className='col-12 col-md-3'>
+            <div className='product-image'>
+              <img src={this.state.film.Image} alt={this.state.film.Image} />
+            </div>
+          </div>
+          <div className='col-12 col-md-9'>
+            <div className='card-body'></div>
           <p>Year: {this.state.film.Year}</p>
           <p>Genre: {this.state.film.Genre}</p>
           <p>Director: {this.state.film.Director}</p>
           <p>Starring: {this.state.film.Starring}</p>
           <Link to='/'>Back to All films</Link>
         </div>
+        </div>
+        </div>
+      </Col>
       )
     }
   }

@@ -11,6 +11,7 @@ class AddFilm extends React.Component {
 
   state = {
     Title     : '',
+    Image     : '',
     Year      : '',
     Genre     : '',
     Direcor   : '',
@@ -45,6 +46,12 @@ class AddFilm extends React.Component {
             <div>
               <label>Film Title:
               <input type='text' value={this.state.Title} onChange={this.handleTitleUpdate.bind(this)}></input>
+              </label>
+              </div>
+
+              <div>
+              <label>Film Image:
+              <input type='text' value={this.state.Image} onChange={this.handleImageUpdate.bind(this)}></input>
               </label>
               </div>
 
@@ -87,6 +94,10 @@ class AddFilm extends React.Component {
     this.setState({Title: e.target.value || null});
   }
 
+  handleImageUpdate(e) {
+    this.setState({Image: e.target.value || null});
+  }
+
   handleYearUpdate(e) {
     this.setState({Year: e.target.value || null});
   }
@@ -117,6 +128,7 @@ class AddFilm extends React.Component {
       body: JSON.stringify({
         authoredBy: this.state.authoredBy,
         Title     : this.state.Title,
+        Image     : this.state.Image,
         Year      : this.state.Year,
         Genre     : this.state.Genre,
         Director  : this.state.Director,

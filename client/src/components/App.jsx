@@ -11,14 +11,19 @@ import Directors   from './Directors';
 import Director    from './Director';
 import AddDirector from './AddDirector';
 import Footer   from './Footer';
+import Cart     from '../lib/Cart';
 import '../scss/main.css';
 class App extends React.Component {
+
+  state = {
+    cart : new Cart()
+  }
 
   render() {
     return (
       <div className='App'>
 
-<Navagation />
+<Navagation cart={this.state.cart}/>
       <Router>
         <Films   path='/' />
         <Film    path='/film/:filmID' />

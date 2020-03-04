@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, Form, NavDropdown} from 'react-bootstrap';
+import ViewCart from './ViewCart';
+import Stripe   from './Stripe';
 
 class NavMenu extends Component {
 
@@ -19,6 +21,10 @@ class NavMenu extends Component {
         <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
       </NavDropdown>
     </Nav>
+    <Form inline>
+      <ViewCart cart={this.props.cart} />
+    </Form>
+    <Stripe />
   </Navbar>
     );
     

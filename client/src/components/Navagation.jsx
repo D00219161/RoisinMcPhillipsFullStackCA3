@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, Form} from 'react-bootstrap';
+import { Nav, Navbar, Form, NavDropdown} from 'react-bootstrap';
 import ViewCart from './ViewCart';
 import StripeCheckout from './Stripe';
 
@@ -13,7 +13,13 @@ class NavMenu extends Component {
       <Nav.Link href="/">Films</Nav.Link>
       <Nav.Link href="/actors">Actors</Nav.Link>
       <Nav.Link href="/directors">Directors</Nav.Link>
-      <Nav.Link href="#">Shop Merch</Nav.Link>
+       <NavDropdown title="Shop Merch" id="nav-dropdown">
+        <NavDropdown.Item eventKey="4.1">Clothing</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.2">Cooking</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
     </Nav>
     <Form inline>
       <ViewCart cart={this.props.cart} />

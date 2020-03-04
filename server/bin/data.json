@@ -1,6 +1,7 @@
 //Films Collection
 {
     "Title" : "Little Women",
+    "Image" : "https://www.eyecinema.ie/images/films/little-women-19.jpg",
     "Year" : "2019",
     "Genre" : "Drama/Historical Drama",
     "Director" : "Greta Gerwig",
@@ -9,6 +10,7 @@
 
 {
     "Title" : "Harley Quinn: Birds of Prey",
+    "Image" : "https://images-na.ssl-images-amazon.com/images/I/819pA4VqgBL._AC_SL1387_.jpg",
     "Year" : "2020",
     "Genre" : "Crime/Action",
     "Director" : "Cathy Yan",
@@ -17,6 +19,7 @@
 
 {
     "Title" : "To All The Boys I Loved Before",
+    "Image" : "https://occ-0-299-300.1.nflxso.net/art/4cf0c/443bd38de79d2c9a970ca7c6d93319ffba04cf0c.jpg",
     "Year" : "2018",
     "Genre" : "Drama/Teen",
     "Director" : "Susan Johnson",
@@ -25,6 +28,7 @@
 
 {
     "Title" : "The Kissing Booth",
+    "Image" : "https://upload.wikimedia.org/wikipedia/en/3/3b/The_Kissing_Booth.png",
     "Year" : "2018",
     "Genre" : "Teen Romantic Comedy",
     "Director" : "Vince Marcello",
@@ -34,6 +38,7 @@
 
 {
     "Title" : "The Duff",
+    "Image" : "https://cps-static.rovicorp.com/2/Open/Lionsgate_507/Program/24330272/_derived_jpg_q90_500x500_m0/24330272_PA_The_DUFF.jpg",
     "Year" : "2015",
     "Genre" : "Comedy/Teen",
     "Director" : "Ari Sandel",
@@ -43,6 +48,7 @@
 
 {
     "Title" : "Clueless",
+    "Image" : "https://images-na.ssl-images-amazon.com/images/I/51-g7vHDrPL._AC_.jpg",
     "Year" : "1995",
     "Genre" : "Romance/Comedy/Teen",
     "Director" : "Amy Heckerling",
@@ -52,6 +58,7 @@
 
 {
     "Title" : "Five Feet Apart",
+    "Image" : "https://i.etsystatic.com/10683147/r/il/41e73e/1841207970/il_570xN.1841207970_f5kh.jpg",
     "Year" : "2019",
     "Genre" : "Drama",
     "Director" : "Justin Baldoni",
@@ -61,6 +68,7 @@
 
 {
     "Title" : "Lady Bird",
+    "Image" : "https://images-na.ssl-images-amazon.com/images/I/81AuyLA3SLL._AC_SL1500_.jpg",
     "Year" : "2017",
     "Genre" : "Drama/Comedy/Indie",
     "Director" : "Great Gerwig",
@@ -70,6 +78,7 @@
 
 {
     "Title" : "After",
+    "Image" : "https://images-na.ssl-images-amazon.com/images/I/91u8ub7NBIL._AC_SY679_.jpg",	
     "Year" : "2019",
     "Genre" : "Teen/Romantic/Drama",
     "Director" : "Jenny Gage",
@@ -79,6 +88,7 @@
 
 {
     "Title" : "Call Me By Your Name",
+    "Image" : "https://thecolonial.org/wp-content/uploads/Call_me_by_your_name_-_Cartel_final.jpg_cmyk.jpg",
     "Year" : "2017",
     "Genre" : "LGBTQ/Italian",
     "Director" : "Luca Guadagnino",
@@ -88,6 +98,7 @@
 
 {
     "Title" : "A Fall From Grace",
+    "Image" : "https://m.media-amazon.com/images/M/MV5BNDM2YjliZDUtZWUzYi00ZDY4LWJlMTEtZGZiZDViZjJiMTllXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
     "Year" : "2020",
     "Genre" : "Crime/Thrillers",
     "Director" : "Tyler Perry",
@@ -97,6 +108,7 @@
 
 {
     "Title" : "Spy",
+    "Image" : "https://www.joblo.com/assets/images/oldsite/posters/images/full/spy-trio-international.jpg",
     "Year" : "2015",
     "Genre" : "Action & Adventure/Action Comedies",
     "Director" : "Paul Feig",
@@ -106,6 +118,7 @@
 
 {
     "Title" : "Dirty Dancing",
+    "Image" : "https://www.liketotally80s.com/wp-content/uploads/2014/07/dirty-dancing-poster.jpg",
     "Year" : "1987",
     "Genre" : "Classic Romantic/Classic Drama",
     "Director" : "Emile Ardolino",
@@ -115,6 +128,7 @@
 
 {
     "Title" : "The Perks Of Being A WallFlower",
+    "Image" : "https://mrrumsey.files.wordpress.com/2013/08/the-perks-of-being-a-wallflower.jpg",
     "Year" : "2012",
     "Genre" : "Teen/Drama/Comedy",
     "Director" : "Stephen Chbosky",
@@ -126,6 +140,7 @@
 //Actors Collection
 {
     "Name" : "Leonardo DiCaprio",
+    "Image" : "https://scstylecaster.files.wordpress.com/2020/02/leonardo-dicaprio-oscars-2020-3.png",
     "DOB" : "November 11th, 1974",
     "Age" : "45 years old",
     "Nationality" : "American",
@@ -134,6 +149,7 @@
 
 {
     "Name" : "Tom Cruise",
+    "Image" : "https://thewashingtonnote.com/wp-content/uploads/2019/11/Tom-Cruise-Net-Worth-2019-1-1024x768.jpg",
     "DOB" : "July 3rd, 1962",
     "Age" : "57 years old",
     "Nationality" : "American",
@@ -142,6 +158,7 @@
 
 {
     "Name" : "Will Smith",
+    "Image" : "https://kingged.com/wp-content/uploads/2019/11/Will-Smith-net-worth.jpg",
     "DOB" : "September 25th, 1968",
     "Age" : "51 years old",
     "Nationality" : "American",
@@ -150,6 +167,7 @@
 
 {
     "Name" : "Johnny Depp",
+    "Image" : "https://m.media-amazon.com/images/M/MV5BMTM0ODU5Nzk2OV5BMl5BanBnXkFtZTcwMzI2ODgyNQ@@._V1_.jpg",
     "DOB" : "June 9th, 1963",
     "Age" : "56 years old",
     "Nationality" : "American",
@@ -158,6 +176,7 @@
 
 {
     "Name" : "Scarlett Johansson",
+    "Image" : "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_.jpg",
     "DOB" : "November 22nd, 1984",
     "Age" : "35 years old",
     "Nationality" : "American",
@@ -166,6 +185,7 @@
 
 {
     "Name" : "Mila Kunis",
+    "Image" : "https://www.biography.com/.image/t_share/MTU3NTQ0Njg5OTM3OTUwMzc0/mila-kunis-attends-the-screening-of-the-spy-who-dumped-me-at-hearst-tower-on-july-12-2018-in-new-york-city-photo-by-dimitrios-kambouris_getty-images.jpg",
     "DOB" : "August 14th, 1983",
     "Age" : "36 years old",
     "Nationality" : "American & Ukrainian",
@@ -174,6 +194,7 @@
 
 {
     "Name" : "Meryl Streep",
+    "Image" : "https://upload.wikimedia.org/wikipedia/commons/4/46/Meryl_Streep_December_2018.jpg",
     "DOB" : "June 22nd, 1949",
     "Age" : "70 years old",
     "Nationality" : "American",
@@ -182,6 +203,7 @@
 
 {
     "Name" : "Anne Hathaway",
+    "Image" : "https://celebmafia.com/wp-content/uploads/2019/11/anne-hathaway-psychologies-uk-january-2020-issue-4.jpg",
     "DOB" : "November 12th, 1982",
     "Age" : "37 years old",
     "Nationality" : "American",
@@ -190,6 +212,7 @@
 
 {
     "Name" : "Jennifer Garner",
+    "Image" : "https://www.intouchweekly.com/wp-content/uploads/2020/01/jennifer-garner-solo-sag-awards-2020.jpg?crop=0px%2C62px%2C3532px%2C1857px&resize=1200%2C630",
     "DOB" : "April 17th, 1972",
     "Age" : "47 years old",
     "Nationality" : "American",
@@ -198,6 +221,7 @@
 
 {
     "Name" : "Matthew Broderick",
+    "Image" : "https://cdnph.upi.com/svc/sv/upi/2881571852349/2019/1/6ea616ba0f0f93f78c9a88e1fde9f94c/Matthew-Broderick-says-Daybreak-role-not-a-grown-up-Ferris-Bueller.jpg",
     "DOB" : "March 21st, 1962",
     "Age" : "57 years old",
     "Nationality" : "American",
@@ -206,6 +230,7 @@
 
 {
     "Name" : "Cillian Murphy",
+    "Image" : "https://newsfashionblog.com/wp-content/uploads/2019/06/1561061612_upcoming-cillian-murphy-new-movies-tv-shows-2019-2020-1024x512.jpg",
     "DOB" : "May 25th, 1976",
     "Age" : "43 years old",
     "Nationality" : "Irish",
@@ -214,6 +239,7 @@
 
 {
     "Name" : "Barry Keoghan",
+    "Image" : "https://goss.ie/wp-content/uploads/2017/11/VIPIrelandImageBarryKeoghan-640x0.jpg",
     "DOB" : "October 18th, 1992",
     "Age" : "27 years old",
     "Nationality" : "Irish",
@@ -222,6 +248,7 @@
 
 {
     "Name" : "Lily Collins",
+    "Image" : "https://images.hdqwalls.com/download/lily-collins-2020-4k-9c-1920x1080.jpg",
     "DOB" : "March 18th, 1989",
     "Age" : "30 years old",
     "Nationality" : "American & British",
@@ -230,6 +257,7 @@
 
 {
     "Name" : "Sophie Turner",
+    "Image" : "https://assets.vogue.com/photos/5e24f5b41ccf7b0008ab56c9/master/pass/GettyImages-1200613340.jpg",
     "DOB" : " February 21st, 1996",
     "Age" : "24 years old",
     "Nationality" : "British",
@@ -238,6 +266,7 @@
 
 {
     "Name" : "Kaya Scodelario",
+    "Image" : "https://i.pinimg.com/originals/4a/eb/57/4aeb57b8e9db6dd1395156f566ff5e5a.jpg",
     "DOB" : "March 13th, 1992",
     "Age" : "27 years old",
     "Nationality" : "Brazilian & British",
@@ -246,6 +275,7 @@
 
 {
     "Name" : "Naomi Scott",
+    "Image" : "https://m.media-amazon.com/images/M/MV5BMzQ5YWRlYjktZDM5My00N2YwLTg4N2ItYmY2ZDQ4ZGYwMzBkXkEyXkFqcGdeQXVyNDU1NjUxOTc@._V1_.jpg",
     "DOB" : "May 6th, 1993",
     "Age" : "26 years old",
     "Nationality" : "British",
@@ -255,6 +285,7 @@
 //Directors Collection
 {
     "Name" : "Steven Spielberg",
+    "Image" : "https://upload.wikimedia.org/wikipedia/commons/6/67/Steven_Spielberg_by_Gage_Skidmore.jpg",
     "DOB" : "December 18th, 1946",
     "Age" : "73 years old",
     "Nationality" : "American",
@@ -264,6 +295,7 @@
 
 {
     "Name" : "Clint Eastwood",
+    "Image" : "https://media.extratv.com/2018/12/11/clint-eastwood-getty-510x600.jpg",
     "DOB" : "May 31st, 1930",
     "Age" : "89 years old",
     "Nationality" : "American",
@@ -273,6 +305,7 @@
 
 {
     "Name" : "Tim Burton",
+    "Image" : "https://www.biography.com/.image/t_share/MTE1ODA0OTcxODcwMDk0ODYx/tim-burton-9542431-1-402.jpg",
     "DOB" : "August 25th, 1958",
     "Age" : "61 years old",
     "Nationality" : "American",
@@ -281,7 +314,8 @@
 }
 
 {
-    "Name" : "Greta Gerwig ",
+    "Name" : "Greta Gerwig",
+    "Image" : "https://i.iheart.com/v3/re/new_assets/5dfee547be88652b75220887?ops=contain(740,0)",
     "DOB" : "August 4th, 1983",
     "Age" : "36 years old",
     "Nationality" : "American",
@@ -291,6 +325,7 @@
 
 {
     "Name" : "Lorene Scafaria",
+    "Image" : "https://m.media-amazon.com/images/M/MV5BNzE3NjkzMzE3M15BMl5BanBnXkFtZTcwNzE0MDIwNg@@._V1_.jpg",
     "DOB" : "May 1st, 1978",
     "Age" : "41 years old",
     "Nationality" : "American",
@@ -300,6 +335,7 @@
 
 {
     "Name" : "Marielle Heller",
+    "Image" : "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/elm110119pp-ellewoman-001-1-1574443398.jpg?crop=0.616xw:0.914xh;0.290xw,0.0862xh&resize=480:*",
     "DOB" : "October 1st, 1979",
     "Age" : "40 years old",
     "Nationality" : "American",
@@ -309,6 +345,7 @@
 
 {
     "Name" : "Patty Jenkins",
+    "Image" : "https://i.redd.it/okm09cbedtb11.jpg",
     "DOB" : "July 24th, 1971",
     "Age" : "48 years old",
     "Nationality" : "American",
@@ -318,6 +355,7 @@
 
 {
     "Name" : "Damien Chazelle",
+    "Image" : "https://guinnessworldrecords.com/Images/Damien-Chazelle-main_tcm25-463915.jpg",
     "DOB" : "January 19th, 1985",
     "Age" : "35 years old",
     "Nationality" : "American",

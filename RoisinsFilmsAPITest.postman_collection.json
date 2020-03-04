@@ -42,7 +42,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"Title\": \"Pearl Harbour\",\n    \"Year\": \"2001\",\n    \"Genre\": \"Historical Drama\",\n    \"Director\": \"Michael Bay\",\n    \"Starring\": \"Ben Affleck, Kate Beckinsale, Josh Harnett & Jennifer Garner\"\n}",
+							"raw": "{\n\t\"Title\": \"Pearl Harbour\",\n\t\"Image\": \"https://images-na.ssl-images-amazon.com/images/I/71rJ-ZgZ9uL._AC_SL1113_.jpg\",\n    \"Year\": \"2001\",\n    \"Genre\": \"Historical Drama\",\n    \"Director\": \"Michael Bay\",\n    \"Starring\": \"Ben Affleck, Kate Beckinsale, Josh Harnett & Jennifer Garner\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -77,7 +77,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"Title\": \"Little Women\",\n    \"Year\": \"2019\",\n    \"Genre\": \"Drama/Historical Drama\",\n    \"Director\": \"Greta Gerwig\",\n    \"Starring\": \"Saoirse Ronan, Florence Pugh, Eliza Scanlen, Emma Watson & Timothée Chalamet\"\n}",
+							"raw": "{\n    \"Title\": \"Pearl Harbour\",\n\t\"Image\": \"https://static.rogerebert.com/uploads/movie/movie_poster/pearl-harbor-2001/large_tt7SGLAp4Du2PqxaFVNrHNLob9s.jpg\",\n    \"Year\": \"2001\",\n    \"Genre\": \"Historical Drama\",\n    \"Director\": \"Michael Bay\",\n    \"Starring\": \"Ben Affleck, Kate Beckinsale, Josh Harnett & Jennifer Garner\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -85,7 +85,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/films/5e53c722d5bd427d2e1112e6",
+							"raw": "http://localhost:3000/films/5e5fac6fc50af24928276df9",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -93,7 +93,7 @@
 							"port": "3000",
 							"path": [
 								"films",
-								"5e53c722d5bd427d2e1112e6"
+								"5e5fac6fc50af24928276df9"
 							]
 						}
 					},
@@ -105,7 +105,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/films/5e545390e84dbb0bf8ce2a56",
+							"raw": "http://localhost:3000/films/5e5fac6fc50af24928276df9",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -113,7 +113,7 @@
 							"port": "3000",
 							"path": [
 								"films",
-								"5e545390e84dbb0bf8ce2a56"
+								"5e5fac6fc50af24928276df9"
 							]
 						}
 					},
@@ -158,7 +158,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"Name\": \"Keneti James Fitzgerald Apa\",\n    \"DOB\": \"June 17th, 1997\",\n    \"Age\": \"22 years old\",\n    \"Nationality\": \"New Zealand\",\n    \"Films\": \"A Dog's Purpose, The Hate U Give & I Still Believe\"\n}",
+							"raw": "{\n\t\"Name\": \"Keneti James Fitzgerald Apa\",\n\t\"Image\": \"https://images.squarespace-cdn.com/content/v1/56c346b607eaa09d9189a870/1541803487064-MJK1XZ7U4II2INQUOXBZ/ke17ZwdGBToddI8pDm48kO_o3JuOjXrbttvZzOnqGYl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hx0TKp4jCW7sB_BGURRbuWXojxgbbTXMsFofMKX0DPfSkP3AAnjSKjxmshPrZV4Jg/FLAUNT-KJ-APA-COVER-163.jpg\",\n    \"DOB\": \"June 17th, 1997\",\n    \"Age\": \"22 years old\",\n    \"Nationality\": \"New Zealand\",\n    \"Films\": \"A Dog's Purpose, The Hate U Give & I Still Believe\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -185,7 +185,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/actors/5e5457157926a526c802b54b",
+							"raw": "http://localhost:3000/actors/5e5faec7c50af24928276dfa",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -193,7 +193,7 @@
 							"port": "3000",
 							"path": [
 								"actors",
-								"5e5457157926a526c802b54b"
+								"5e5faec7c50af24928276dfa"
 							]
 						}
 					},
@@ -213,7 +213,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"Name\": \"Will Smith\",\n    \"DOB\": \"September 25th, 1968\",\n    \"Age\": \"51 years old\",\n    \"Nationality\": \"American\",\n    \"Films\": \"The Pursuit of Happyness, Suicide Squad, Aladdin & Independence Day\"\n}",
+							"raw": "{\n\t\"Name\": \"Keneti James Fitzgerald Apa\",\n\t\"Image\": \"https://i.pinimg.com/564x/7c/2a/b3/7c2ab3aa17d1d51c8561659107419577.jpg\",\n    \"DOB\": \"June 17th, 1997\",\n    \"Age\": \"22 years old\",\n    \"Nationality\": \"New Zealand\",\n    \"Films\": \"A Dog's Purpose, The Hate U Give & I Still Believe\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -221,7 +221,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/actors/5e53d52fd5bd427d2e1116a8",
+							"raw": "http://localhost:3000/actors/5e5faec7c50af24928276dfa",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -229,7 +229,7 @@
 							"port": "3000",
 							"path": [
 								"actors",
-								"5e53d52fd5bd427d2e1116a8"
+								"5e5faec7c50af24928276dfa"
 							]
 						}
 					},
@@ -274,7 +274,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"Name\": \"Tim Burton\",\n    \"DOB\": \"August 25th, 1958\",\n    \"Age\": \"61 years old\",\n    \"Nationality\": \"American\",\n    \"Genres\": \"Fantasy, Comedy, Horror, Adventure & Animation\",\n    \"Films\": \"Alice in Wonderland, Corpse Bride, Beetlejuice, Edward Scissorhands, Batman Returns & Planet of the Apes\"\n}",
+							"raw": "{\n\t\"Name\": \"Peter Jackson\",\n\t\"Image\": \"https://m.media-amazon.com/images/M/MV5BMTY1MzQ3NjA2OV5BMl5BanBnXkFtZTcwNTExOTA5OA@@._V1_.jpg\",\n    \"DOB\": \"October 31st, 1961\",\n    \"Age\": \"58 years old\",\n    \"Nationality\": \"New Zealand\",\n    \"Genres\": \"Drama, Action, Fantasy, Romance & Supernatural\",\n    \"Films\": \"King Kong, Dead Alive, The Hobbit: An Unexpected Journey, Mortal Engines & The Lovely Bones\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -282,7 +282,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/directors/5e544a85d5bd427d2e1120b2",
+							"raw": "http://localhost:3000/directors/5e5fafbbc50af24928276dfb",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -290,7 +290,7 @@
 							"port": "3000",
 							"path": [
 								"directors",
-								"5e544a85d5bd427d2e1120b2"
+								"5e5fafbbc50af24928276dfb"
 							]
 						}
 					},
@@ -310,7 +310,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"Name\": \"Peter Jackson\",\n    \"DOB\": \"October 31st, 1961\",\n    \"Age\": \"58 years old\",\n    \"Nationality\": \"New Zealand\",\n    \"Genres\": \"Drama, Action, Fantasy, Romance & Supernatural\",\n    \"Films\": \"King Kong, Dead Alive, The Hobbit: An Unexpected Journey, Mortal Engines & The Lovely Bones\"\n}",
+							"raw": "{\n\t\"Name\": \"Peter Jackson\",\n\t\"Image\": \"https://www.indiewire.com/wp-content/uploads/2019/05/shutterstock_10100907cl.jpg?w=780\",\n    \"DOB\": \"October 31st, 1961\",\n    \"Age\": \"58 years old\",\n    \"Nationality\": \"New Zealand\",\n    \"Genres\": \"Drama, Action, Fantasy, Romance & Supernatural\",\n    \"Films\": \"King Kong, Dead Alive, The Hobbit: An Unexpected Journey, Mortal Engines & The Lovely Bones\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -337,7 +337,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/directors/5e5459237926a526c802b54c",
+							"raw": "http://localhost:3000/directors/5e5fafbbc50af24928276dfb",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -345,7 +345,7 @@
 							"port": "3000",
 							"path": [
 								"directors",
-								"5e5459237926a526c802b54c"
+								"5e5fafbbc50af24928276dfb"
 							]
 						}
 					},

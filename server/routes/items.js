@@ -1,61 +1,61 @@
 const express  = require('express');
 const router   = express.Router();
 const mongoose = require('mongoose'); // using to generate ObjectIDs
-const Merch     = require('../models/Merch').Merch;
+const Item     = require('../models/Item').Item;
 
 /**
  * Functionality for this route:
- *  C   POST    /Merch/       Create a new Merch
- *  R   GET     /Merch         Gets an array of all Merch
- *  R   GET     /Merch/:id     Get a single Merch, by ID
- *  U   PUT     /Merch/:id     Update a single Merch, by id
- *  D   DELETE  /Merch/:id     Delete a single Merch, by ID
+ *  C   POST    /Items/       Create a new Item
+ *  R   GET     /Items/         Gets an array of all Items
+ *  R   GET     /Items/:id     Get a single Item, by ID
+ *  U   PUT     /Items/:id     Update a single Item, by id
+ *  D   DELETE  /Items/:id     Delete a single Item, by ID
  */
 
-// GET an array of all Merch
+// GET an array of all Items
 router.get('/', (req, res) => {
     return mongoose
-      .model('Merch')
+      .model('Item')
       .find({})
-      .then (merchs => res.json(merchs))
+      .then (items => res.json(items))
       .catch(err => res
         .status(500)
         .json({ok: false})
       );
   });
 
-  // GET a single Merch by ID
+  // GET a single Item by ID
 router.get('/:id([0-9a-fA-F]{24})', (req, res) => {
   return mongoose
-    .model('Merch')
+    .model('Item')
     .findOne({_id: req.params.id})
-    .then (merch => res.json(merch))
+    .then (item => res.json(item))
     .catch(err => res
       .status(500)
       .json({ok: false})
     );
 });
 
-// POST Create a Merch
+// POST Create a new Item
 router.post('/', (req, res) => {
-  return new Merch({
+  return new Item({
     Name    : req.body.Name,
     Image   : req.body.Image,
     Description     : req.body.Description,
     Price     : req.body.Price
   })
   .save()
-  .then (merch => Merch.populate(merch, {path: '_id'}))
-  .then (merch => res.json(merch))
+  .then (item => Item.populate(item, {path: '_id'}))
+  .then (item => res.json(item))
   .catch(err => res
     .status(400)
     .json({ok: false, error: err.message})
   );
 });
 
-// DELETE Delete a Merch with a given ID
+// DELETE Delete an Item with a given ID
 router.delete('/:id([0-9a-fA-F]{24})', (req, res) => {
-  return Merch
+  return Item
     .deleteOne({_id: req.params.id})
     .then (() => res.json({'ok': true}))
     .catch(err => res
@@ -64,9 +64,9 @@ router.delete('/:id([0-9a-fA-F]{24})', (req, res) => {
     );
 });
 
-// PUT Update a Merch
+// PUT Update an Item
 router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
-  return Merch
+  return Item
     .findOneAndUpdate(
       {_id: req.params.id},
       {$set: {
@@ -77,8 +77,8 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
       }},
       {new: true}
     )
-    .then (merch => Merch.populate(merch, {path: '_id'}))
-    .then (merch => res.json(merch))
+    .then (item => Item.populate(item, {path: '_id'}))
+    .then (item => res.json(item))
     .catch(err => res
       .status(500)
       .json({ok: false})

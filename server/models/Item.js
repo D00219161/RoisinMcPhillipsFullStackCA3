@@ -2,7 +2,7 @@ const mongoose  = require('mongoose');
 const validator = require('validator');
 
 const SchemeConfig = {timestamps: true, skipVersioning: true};
-const MerchSchema  = new mongoose.Schema({
+const ItemSchema  = new mongoose.Schema({
 
     Name: {
       type      : String,
@@ -30,4 +30,4 @@ const MerchSchema  = new mongoose.Schema({
     
   }, SchemeConfig);
 
-  module.exports.Merch = mongoose.model('Merch', MerchSchema);
+  module.exports.Item = mongoose.model('Item', ItemSchema);

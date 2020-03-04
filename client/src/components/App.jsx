@@ -10,8 +10,8 @@ import AddActor from './AddActor';
 import Directors   from './Directors';
 import Director    from './Director';
 import AddDirector from './AddDirector';
-import Merchs   from './Merchs';
-import Merch    from './Merch';
+import Items    from './Items';
+import Item     from './Item';
 import Footer   from './Footer';
 import Cart     from '../lib/Cart';
 import '../scss/main.css';
@@ -36,8 +36,8 @@ class App extends React.Component {
         <Directors   path='/directors' />
         <Director    path='/director/:directorID' />
         <AddDirector path='/add-director/' />
-        <Merchs   path='/merchs' />
-        <Merch    path='/merch/:merchID' />
+        <Items   path='/items' />
+        <Item    path='/item/:itemID' />
         </Router>
         <Footer />
         </div>

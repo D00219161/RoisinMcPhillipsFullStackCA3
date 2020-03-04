@@ -44,8 +44,7 @@ router.post('/', (req, res) => {
     DOB     : req.body.DOB,
     Age     : req.body.Age,
     Nationality    : req.body.Nationality,
-    Films   : req.body.Films,
-    Video   : req.body.Video
+    Films   : req.body.Films
   })
   .save()
   .then (actor => Actor.populate(actor, {path: '_id'}))
@@ -78,8 +77,7 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
         DOB     : req.body.DOB,
         Age     : req.body.Age,
         Nationality    : req.body.Nationality,
-        Films   : req.body.Films,
-        Video   : req.body.Video
+        Films   : req.body.Films
       }},
       {new: true}
     )

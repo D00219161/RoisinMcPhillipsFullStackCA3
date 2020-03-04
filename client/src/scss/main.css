@@ -11,7 +11,11 @@ div.product-image {
 }
 
 div.product-image img {
-  width: 320px;
-  height: 450px;
+  width: 338px;
+  height: 440px;
+}
+
+.directors {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

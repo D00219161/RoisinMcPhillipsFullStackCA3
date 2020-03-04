@@ -10,6 +10,12 @@ const DirectorSchema  = new mongoose.Schema({
       validator : value => !validator.isEmpty(value)
     },
 
+    Image: {
+      type      : String,
+      required  : true,
+      validator : value => !validator.isEmpty(value)
+    },
+
     DOB: {
       type      : String,
       required  : true,

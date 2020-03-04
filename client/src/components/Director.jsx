@@ -1,7 +1,8 @@
 import React              from 'react';
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
-import * as Config        from '../config.json'
+import * as Config        from '../config.json';
+import {Container, Row, Col} from 'react-bootstrap'
 
 class Director extends React.Component {
 
@@ -32,15 +33,23 @@ class Director extends React.Component {
       );
     } else {
       return (
-        <div>
-          <h1>{this.state.director.Name}</h1>
+        <Container className ="directors">
+<div>
+  <Row>
+  <Col xs><h1>{this.state.director.Name}</h1>
+  <div className='product-image'>
+  <img src={this.state.director.Image} alt={this.state.director.Image} />
           <p>DOB: {this.state.director.DOB}</p>
           <p>Age: {this.state.director.Age}</p>
           <p>Nationality: {this.state.director.Nationality}</p>
           <p>Genre: {this.state.director.Genres}</p>
           <p>Films: {this.state.director.Films}</p>
           <Link to='/directors.'>Back to All directors</Link>
-        </div>
+         </div>
+        </Col>
+        </Row>
+  </div>
+</Container>
       )
     }
   }

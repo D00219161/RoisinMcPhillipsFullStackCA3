@@ -11,6 +11,7 @@ class AddDirector extends React.Component {
 
   state = {
     Name     : '',
+    Image    : '',
     DOB      : '',
     Age      : '',
     Nationality : '',
@@ -47,6 +48,12 @@ class AddDirector extends React.Component {
             <div>
               <label>Director Name:
               <input type='text' value={this.state.Name} onChange={this.handleNameUpdate.bind(this)}></input>
+              </label>
+              </div>
+
+              <div>
+              <label>Director Image:
+              <input type='text' value={this.state.Image} onChange={this.handleImageUpdate.bind(this)}></input>
               </label>
               </div>
 
@@ -95,6 +102,10 @@ class AddDirector extends React.Component {
     this.setState({Name: e.target.value || null});
   }
 
+  handleImageUpdate(e) {
+    this.setState({Name: e.target.value || null});
+  }
+
   handleDOBUpdate(e) {
     this.setState({DOB: e.target.value || null});
   }
@@ -129,6 +140,7 @@ class AddDirector extends React.Component {
       body: JSON.stringify({
         authoredBy: this.state.authoredBy,
         Name     : this.state.Name,
+        Image    : this.state.Image,
         DOB      : this.state.DOB,
         Age      : this.state.Age,
         Nationality  : this.state.Nationality,

@@ -15,8 +15,7 @@ class AddActor extends React.Component {
     DOB      : '',
     Age     : '',
     Nationality   : '',
-    Films  : '',
-    Video  : ''
+    Films  : ''
   }
 
   // #######################################################
@@ -81,12 +80,6 @@ class AddActor extends React.Component {
             </div>
 
             <div>
-              <label>Actor Video:
-              <input type='text' value={this.state.Video} onChange={this.handleVideoUpdate.bind(this)}></input>
-              </label>
-            </div>
-
-            <div>
               <input type='submit' value='Add Actor' />
             </div>
 
@@ -121,10 +114,6 @@ class AddActor extends React.Component {
     this.setState({Films: e.target.value || null});
   }
 
-  handleVideoUpdate(e) {
-    this.setState({Video: e.target.value || null});
-  }
-
   handleSubmit(e) {
 
     // Prevent the default form submit action
@@ -143,8 +132,7 @@ class AddActor extends React.Component {
         DOB          : this.state.DOB,
         Age          : this.state.Age,
         Nationality  : this.state.Nationality,
-        Films        : this.state.Films,
-        Video        : this.state.Video
+        Films        : this.state.Films
       })}
     )
       .then (res  => {

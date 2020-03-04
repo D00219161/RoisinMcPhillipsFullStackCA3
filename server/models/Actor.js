@@ -38,12 +38,6 @@ const ActorSchema  = new mongoose.Schema({
       type      : String,
       required  : true,
       validator : value => !validator.isEmpty(value)
-    },
-
-    Video: {
-      type      : String,
-      required  : true,
-      validator : value => !validator.isEmpty(value)
     }
     
   }, SchemeConfig);

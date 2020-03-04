@@ -12,6 +12,7 @@ import Director    from './Director';
 import AddDirector from './AddDirector';
 import Items    from './Items';
 import Item     from './Item';
+import AddItem from './AddItem';
 import Footer   from './Footer';
 import Cart     from '../lib/Cart';
 import '../scss/main.css';
@@ -38,6 +39,7 @@ class App extends React.Component {
         <AddDirector path='/add-director/' />
         <Items   path='/items' />
         <Item    path='/item/:itemID' />
+        <AddItem path='/add-item/' />
         </Router>
         <Footer />
         </div>

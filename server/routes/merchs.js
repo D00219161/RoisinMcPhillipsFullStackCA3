@@ -5,11 +5,11 @@ const Merch     = require('../models/Merch').Merch;
 
 /**
  * Functionality for this route:
- *  C   POST    /Merchs/        Create a new Merch
- *  R   GET     /Merchs         Gets an array of all Merchs
- *  R   GET     /Merchs/:id     Get a single Merch, by ID
- *  U   PUT     /Merchs/:id     Update a single Merch, by id
- *  D   DELETE  /Merchs/:id     Delete a single Merch, by ID
+ *  C   POST    /Merch/       Create a new Merch
+ *  R   GET     /Merch         Gets an array of all Merch
+ *  R   GET     /Merch/:id     Get a single Merch, by ID
+ *  U   PUT     /Merch/:id     Update a single Merch, by id
+ *  D   DELETE  /Merch/:id     Delete a single Merch, by ID
  */
 
 // GET an array of all Merch
@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
     return mongoose
       .model('Merch')
       .find({})
-      .then (merch => res.json(merch))
+      .then (merchs => res.json(merchs))
       .catch(err => res
         .status(500)
         .json({ok: false})
@@ -36,13 +36,13 @@ router.get('/:id([0-9a-fA-F]{24})', (req, res) => {
     );
 });
 
-// POST Create a new Merch
+// POST Create a Merch
 router.post('/', (req, res) => {
   return new Merch({
-    Name  : req.body.Name,
-    Image  : req.body.Image,
-    Description : req.body.Description,
-    Price    :req.body.Price
+    Name    : req.body.Name,
+    Image   : req.body.Image,
+    Description     : req.body.Description,
+    Price     : req.body.Price
   })
   .save()
   .then (merch => Merch.populate(merch, {path: '_id'}))
@@ -70,10 +70,10 @@ router.put('/:id([0-9a-fA-F]{24})', (req, res) => {
     .findOneAndUpdate(
       {_id: req.params.id},
       {$set: {
-        Name  : req.body.Name,
-        Image  : req.body.Image,
-        Description : req.body.Description,
-        Price    :req.body.Price
+        Name    : req.body.Name,
+        Image   : req.body.Image,
+        Description     : req.body.Description,
+        Price     : req.body.Price
       }},
       {new: true}
     )

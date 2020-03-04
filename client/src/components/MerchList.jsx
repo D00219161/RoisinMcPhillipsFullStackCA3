@@ -79,4 +79,4 @@ class MerchList extends React.Component {
 
 }
 
-export default MerchList;
+export default ProductList;

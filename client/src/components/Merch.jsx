@@ -56,7 +56,7 @@ class Merch extends React.Component {
   }
 
   componentDidMount() {
-    fetch(urlToCurrentDomain(`${Config.merchAPI}/${this.props.merchID}`))
+    fetch(urlToCurrentDomain(`${Config.merchsAPI}/${this.props.merchID}`))
       .then (res  => res.json())
       .then (json => {
         this.setState({merch       : json});
@@ -69,4 +69,4 @@ class Merch extends React.Component {
 
 }
 
-export default Film;
+export default Merch;

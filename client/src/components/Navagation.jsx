@@ -13,12 +13,9 @@ class NavMenu extends Component {
       <Nav.Link href="/">Films</Nav.Link>
       <Nav.Link href="/actors">Actors</Nav.Link>
       <Nav.Link href="/directors">Directors</Nav.Link>
+      <Nav.Link href="/merchs">Shop Merch</Nav.Link>
        <NavDropdown title="Shop Merch" id="nav-dropdown">
-        <NavDropdown.Item eventKey="4.1">Clothing</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.2">Cooking</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.1"></NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Form inline>

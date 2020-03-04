@@ -5,7 +5,7 @@ const logger         = require('morgan');
 const filmsRouter    = require('./routes/films');
 const actorsRouter   = require('./routes/actors');
 const directorsRouter   = require('./routes/directors');
-const merchRouter    = require('./routes/merchs');
+const merchsRouter   = require('./routes/merchs');
 const app            = express();
 const mongoose       = require('mongoose');
 const config         = require('./config.json');
@@ -43,7 +43,7 @@ app.use(function(req, res, next) {
 app.use('/films', filmsRouter);
 app.use('/actors', actorsRouter);
 app.use('/directors', directorsRouter);
-app.use('./merchs', merchRouter);
+app.use('/merchs', merchsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

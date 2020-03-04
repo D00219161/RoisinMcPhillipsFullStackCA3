@@ -1,7 +1,6 @@
 import React    from 'react'; 
 import {Router} from "@reach/router";
 import Navagation from './Navagation';
-import Cart     from '../lib/Cart';
 import Films   from './Films';
 import Film    from './Film';
 import AddFilm from './AddFilm';
@@ -15,14 +14,11 @@ import Footer   from './Footer';
 import '../scss/main.css';
 class App extends React.Component {
 
-  state = {
-    cart : new Cart()
-  }
   render() {
     return (
       <div className='App'>
 
-<Navagation cart={this.state.cart}/>
+<Navagation />
       <Router>
         <Films   path='/' />
         <Film    path='/film/:filmID' />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
-import {Col, Row, Container} from 'react-bootstrap';
+
 
 class Stripe extends Component {
     onToken = (token, description, image, name, label) => {

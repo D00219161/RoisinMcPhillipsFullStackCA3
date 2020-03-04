@@ -3,12 +3,19 @@ div.product-image {
   height     : 100%;
 }
 
+div.product-image img {
+  width       : 338px;
+  height      : 440px;
+}
 
 div.product-image img {
   width       : 338px;
   height      : 440px;
 }
 
-.directors{
-  text-align: center;
+.directors{text-align: center;}
+
+.directors.product-image{
+  width: 400px;
+  height: 400px;
 }

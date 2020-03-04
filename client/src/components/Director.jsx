@@ -44,7 +44,7 @@ class Director extends React.Component {
           <p>Nationality: {this.state.director.Nationality}</p>
           <p>Genre: {this.state.director.Genres}</p>
           <p>Films: {this.state.director.Films}</p>
-          <Link to='/directors.'>Back to All directors</Link>
+          <Link to='/directors'>Back to All directors</Link>
          </div>
         </Col>
         </Row>

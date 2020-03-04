@@ -1,4 +1,5 @@
 import React              from 'react';
+import AddToCartButton from './AddToCartButton'; 
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import * as Config        from '../config.json';
@@ -37,7 +38,8 @@ class Item extends React.Component {
   <div className='product-image'>
   <img src={this.state.item.Image} alt={this.state.item.Image} />
           <p>Description: {this.state.item.Description}</p>
-          <p>Age: {this.state.item.Price}</p>
+          <p>Price: {this.state.item.Price}</p>
+          <AddToCartButton item={this.props.item} cart={this.props.cart} />
           <Link to='/items'>Back to All items</Link>
          </div>
   </div>
@@ -60,3 +62,4 @@ class Item extends React.Component {
 }
 
 export default Item;
+

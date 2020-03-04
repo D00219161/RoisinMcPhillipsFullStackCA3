@@ -13,7 +13,7 @@ class ViewCart extends React.Component {
   // Render basic data from the cart
   render() {
     return (
-      <p>Items in cart: {this.props.cart.getMerchCount}. Total price: {this.props.cart.getTotalPrice().toFixed(2)}</p>
+      <p>Items in cart: {this.props.cart.getItemsCount()}. Total price: {this.props.cart.getTotalPrice().toFixed(2)}</p>
     );
   }
 

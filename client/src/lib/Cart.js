@@ -1,50 +1,50 @@
 export default class Cart {
 
-  merchs             = [];
+  products              = [];
   attachedComponents = [];
 
   // Given a product object (from PHP api), returns true or
   // false to indicate if the product is in the cart
-  contains(merchs) {
-    return this.cartIndexOf(merchs) !== -1;
+  contains(item) {
+    return this.cartIndexOf(item) !== -1;
   }
 
   // Returns the index of a single item in the cart, or
   // -1 i the item is not in the cart
-  cartIndexOf(merchs) {
-    return this.merchs.findIndex(each => each.id === merchs.Name);
+  cartIndexOf(item) {
+    return this.products.findIndex(each => each.id === item.id);
   }
 
   // Add a single item to the cart
-  addToCart(merchs) {
-    if (!this.contains(merchs)) {
-      this.merchs.push(merchs);
+  addToCart(item) {
+    if (!this.contains(item)) {
+      this.products.push(item);
       this.updateComponents();
     }
   }
 
   // Remove a single item from the cart
-  removeFromCart(merchs) {
-    const cartIndex = this.cartIndexOf(merchs);
+  removeFromCart(item) {
+    const cartIndex = this.cartIndexOf(item);
     if (cartIndex !== -1) {
-      this.merchs.splice(cartIndex, 1);
+      this.products.splice(cartIndex, 1);
       this.updateComponents();
     }
   }
 
   // Return all products (array) in the cart
-  getMerch() {
-    return this.merchs;
+  getItems() {
+    return this.products;
   }
 
   // Return a count of all of the products in the cart
-  getMerchCount() {
-    return this.merchs.length;
+  getItemsCount() {
+    return this.products.length;
   }
 
   // Returns the total price of all products in the cart
   getTotalPrice() {
-    return this.merchs.reduce((acc, each) => {
+    return this.products.reduce((acc, each) => {
       return acc += parseFloat(each.price);
     }, 0);
   }

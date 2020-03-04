@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
-import { Nav, Navbar} from 'react-bootstrap';
-import image1 from 'images/movietimeresize.jpg';
+import { Nav, Navbar, Form} from 'react-bootstrap';
+import ViewCart from './ViewCart';
+import StripeCheckout from './Stripe';
 
 class NavMenu extends Component {
 
   render() {
     return (
       <Navbar>
-    <Navbar.Brand><img src={image1}/>Movies</Navbar.Brand>
+    <Navbar.Brand><img src="https://img.icons8.com/doodle/48/000000/movie.png"/>Movies</Navbar.Brand>
     <Nav className="nav">
       <Nav.Link href="/">Films</Nav.Link>
       <Nav.Link href="/actors">Actors</Nav.Link>
       <Nav.Link href="/directors">Directors</Nav.Link>
+      <Nav.Link href="#">Shop Merch</Nav.Link>
     </Nav>
+    <Form inline>
+      <ViewCart cart={this.props.cart} />
+    </Form>
+    <StripeCheckout />
   </Navbar>
     );
     

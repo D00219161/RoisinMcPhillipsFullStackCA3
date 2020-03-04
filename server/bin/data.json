@@ -362,3 +362,60 @@
     "Genres" : "Drama, Romance, Comedy, History & Musical",
     "Films" : "La La Land, Whiplash, First Man, 10 Cloverfield Lane & Surrogate"
 }
+
+//Film Items Collection
+{
+    "Name" : "Black Birds Of Prey Harley Quinn T-Shirt",
+    "Image" : "shorturl.at/kpKL2",
+    "Description" : "Starring the feisty Harley Quinn, this awesome Birds Of Prey tee is the perfect tribute to DC's latest movie. With the ultimate girl gang in tow, this flick really does pack a punch. Unisex lightweight tee with a soft feel",
+    "Price" : "15.00"
+}
+
+{
+    "Name" : "Harley Quinn Shaped Mug",
+    "Image" : "https://3b3832722e63ef13df5f-655e11a96f14b2c941c4bc34ef58f583.ssl.cf2.rackcdn.com/product_images_new/TS_Harley_Quinn_Shaped_Mug_13_99-617-662.jpg",
+    "Description" : "Those much-replicated pigtails are a Harley Quinn trademark. Not only a super stylish statement, the sensational locks have also doubled up as handles on this wicked Harley Quinn mug.",
+    "Price" : "14.00"
+}
+
+{
+    "Name" : "CLUELESS WHATEVER T-SHIRT",
+    "Image" : "https://hottopic.scene7.com/is/image/HotTopic/11695169_hi?$pdp_hero_zoom$",
+    "Description" : "The famous Clueless phase Whatever t-shirt.",
+    "Price" : "30.00"
+}
+
+{
+    "Name" : "CLUELESS LIP GLOSS COLLECTION",
+    "Image" : "https://hottopic.scene7.com/is/image/HotTopic/11424728_hi?$pdp_hero_zoom$",
+    "Description" : "Um duh, of course there's a Clueless lip gloss collection.",
+    "Price" : "15.00"
+}
+
+{
+    "Name" : "Peter and Lara Jean T-Shirt",
+    "Image" : "https://res.cloudinary.com/teepublic/image/private/s--Fumod4sm--/t_Resized%20Artwork/c_crop,x_10,y_10/c_fit,w_470/c_crop,g_north_west,h_626,w_470,x_0,y_0/g_north_west,u_upload:v1462829024:production:blanks:a59x1cgomgu5lprfjlmi,x_-395,y_-325/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1547452316/production/designs/3974140_0.jpg",
+    "Description" : "To All The Boys Ive Loved Before T-Shirt - Designed and Sold by ritta1310",
+    "Price" : "20.00"
+}
+
+{
+    "Name" : "Lady Bird T-Shirt",
+    "Image" : "https://res.cloudinary.com/teepublic/image/private/s--ftH4qctB--/t_Resized%20Artwork/c_crop,x_10,y_10/c_fit,w_470/c_crop,g_north_west,h_626,w_470,x_0,y_-103/g_north_west,u_upload:v1462829024:production:blanks:a59x1cgomgu5lprfjlmi,x_-395,y_-428/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1515682850/production/designs/2272469_1.jpg",
+    "Description" : "Lady Bird T-Shirt - Designed by desIgnite",
+    "Price" : "30.00"
+}
+
+{
+    "Name" : "Five Feet Apart Case & Skin for Samsung Galaxy",
+    "Image" : "https://ih0.redbubble.net/image.801465658.1189/icr,samsung_galaxy_s10_snap,back,a,x600-pad,600x600,f8f8f8.1u2.jpg",
+    "Description" : "Five Feet Apart Case & Skin for Samsung Galaxy - Designed by anekaart21",
+    "Price" : "35.00"
+}
+
+{
+    "Name" : "Five Feet Apart Sticker",
+    "Image" : "https://ih1.redbubble.net/image.1082134927.4537/st,small,507x507-pad,600x600,f8f8f8.u2.jpg",
+    "Description" : "Five Feet Apart Sticker - Designed by saidmou",
+    "Price" : "4.50"
+}

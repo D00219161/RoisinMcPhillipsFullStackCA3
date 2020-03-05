@@ -13,7 +13,7 @@ class AddToCartButton extends React.Component {
   // Render
   render() {
 
-    if (this.props.cart.contains(this.props.merch)) {
+    if (this.props.cart.contains(this.state.item)) {
       return (
         <a href='#!' className='btn btn-danger' onClick={this.handleClick.bind(this)}>Remove from Cart</a>
       );
@@ -29,10 +29,10 @@ class AddToCartButton extends React.Component {
   // Executed when the add or remove form of the current component
   // is clicked. Adds or removes this buttons item to the cart (toggle)
   handleClick () {
-    if (this.props.cart.contains(this.props.merch)) {
-      this.props.cart.removeFromCart(this.props.merch);
+    if (this.props.cart.contains(this.state.item)) {
+      this.props.cart.removeFromCart(this.state.item);
     } else {
-      this.props.cart.addToCart(this.props.merch)
+      this.props.cart.addToCart(this.state.item)
     }
   }
 

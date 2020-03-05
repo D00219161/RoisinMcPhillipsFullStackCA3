@@ -1,6 +1,6 @@
 export default class Cart {
 
-  products              = [];
+  items              = [];
   attachedComponents = [];
 
   // Given a product object (from PHP api), returns true or
@@ -12,13 +12,13 @@ export default class Cart {
   // Returns the index of a single item in the cart, or
   // -1 i the item is not in the cart
   cartIndexOf(item) {
-    return this.products.findIndex(each => each.id === item.id);
+    return this.items.findIndex(each => each.id === item.id);
   }
 
   // Add a single item to the cart
   addToCart(item) {
     if (!this.contains(item)) {
-      this.products.push(item);
+      this.items.push(item);
       this.updateComponents();
     }
   }
@@ -27,24 +27,24 @@ export default class Cart {
   removeFromCart(item) {
     const cartIndex = this.cartIndexOf(item);
     if (cartIndex !== -1) {
-      this.products.splice(cartIndex, 1);
+      this.items.splice(cartIndex, 1);
       this.updateComponents();
     }
   }
 
-  // Return all products (array) in the cart
+  // Return all items (array) in the cart
   getItems() {
-    return this.products;
+    return this.items;
   }
 
   // Return a count of all of the products in the cart
   getItemsCount() {
-    return this.products.length;
+    return this.items.length;
   }
 
   // Returns the total price of all products in the cart
   getTotalPrice() {
-    return this.products.reduce((acc, each) => {
+    return this.items.reduce((acc, each) => {
       return acc += parseFloat(each.price);
     }, 0);
   }

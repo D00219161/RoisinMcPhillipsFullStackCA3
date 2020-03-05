@@ -1,8 +1,8 @@
 import React       from 'react';
-import Item        from './Item';
+import Item     from './Item';
 import * as Config from '../config.json'
 
-class ItemList extends React.Component {
+class ProductList extends React.Component {
 
   // #######################################################
   // # Local state
@@ -47,11 +47,11 @@ class ItemList extends React.Component {
       );
     }
 
-    // Or, if there are items in the item list
+    // Or, if there are items in the product list
     else {
       return (
-        // For each item in the items array, we create
-        // a item component (passing each item as a prop)
+        // For each product in the products array, we create
+        // a Product component (passing each product as a prop)
         <div className='product-list pt-3 pl-3 pr-3'>
           {this.state.items.map(item => (
             <Item item={item} cart={this.props.cart} key={`item-${item.id}`} />
@@ -66,7 +66,7 @@ class ItemList extends React.Component {
     // Fetch from PHP script and update the products state value
     // React will automatically 'react' to this change and re-render
     // the ProductList component.
-    fetch(Config.itemsAPI.getItems) //api
+    fetch(Config.itemsAPI.getItems)
       .then (res  => res.json())
       .then (json => {
         this.setState({items: json});

@@ -1,6 +1,11 @@
 .navbar{
-background-color: blue;
+    background-color: $nav-color;
     color: black;
     text-align: center;
     width: auto;
+}
+
+form{
+    padding-right: 2em;
+    text-align: center;
 }

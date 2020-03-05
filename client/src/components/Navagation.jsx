@@ -13,7 +13,7 @@ class NavMenu extends Component {
       <Nav.Link href="/">Films</Nav.Link>
       <Nav.Link href="/actors">Actors</Nav.Link>
       <Nav.Link href="/directors">Directors</Nav.Link>
-      <Nav.Link href="/items">Shop Merch</Nav.Link>
+      <Nav.Link href="#">Shop Merch</Nav.Link>
     </Nav>
     <Form inline>
       <ViewCart cart={this.props.cart} />

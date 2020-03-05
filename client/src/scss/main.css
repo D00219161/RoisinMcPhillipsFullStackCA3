@@ -1,8 +1,13 @@
 .navbar {
-  background-color: blue;
+  background-color: #E5FFF5;
   color: black;
   text-align: center;
   width: auto;
+}
+
+form {
+  padding-right: 2em;
+  text-align: center;
 }
 
 div.product-image {
@@ -27,5 +32,10 @@ div.product-image img {
 .directors.product-image {
   width: 400px;
   height: 400px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #A5CEBE;
 }
 /*# sourceMappingURL=main.css.map */

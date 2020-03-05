@@ -9,7 +9,7 @@ class ToastNote extends Component {
     <Toast.Header>
       <img src="https://img.icons8.com/doodle/48/000000/popcorn.png" className="rounded mr-2" alt="image" />
       <medium className="mr-auto">Welcome To Movies.ie</medium>
-      <img src="https://img.icons8.com/doodle/48/000000/popcorn.png" className="rounded mr-2" alt="image" />
+      <img src="https://img.icons8.com/plasticine/48/000000/cola.png" className="rounded mr-2" alt="image" />
     </Toast.Header>
     <Toast.Body>Enjoy our Film selection and check out our merch!
     </Toast.Body>

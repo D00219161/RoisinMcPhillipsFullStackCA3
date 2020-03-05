@@ -1,11 +1,9 @@
 # RoisinMcPhillipsFullStackCA3
 
-Server side:
-Created a new DB called Films-db
-Added in a films collection and an actors collection
-Linked both collections to the server side code - created an actor route and an film route along with a new Actor and Film models
-Updated and added neccessary data to my App.js file so that I could view both collections on localhost:3000
+A Movie website created using mongo db.
+4 collections used - Films, Actors, Directors and Items.
+It is a webiste to show some of the best films going, famous actors and directors.
+There is also a merch shop aspect added to make the site more engaging.
+There is videos, images and various elements added to make the site more appealing with a simple colour theme.
 
-Client side I have added my film files - Film.jsx, Films.jsx and AddFilm.jsx - These print out all film data from db to the client and is running on port 3001
-
-I have made my commit messages after each change was made to each file.
+Created using react 

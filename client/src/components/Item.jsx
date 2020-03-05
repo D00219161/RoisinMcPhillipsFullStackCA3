@@ -35,15 +35,12 @@ class Item extends React.Component {
     } else {
       return (
           <Row>
-         <Media><img src={this.state.item.Image} alt={this.state.item.Image} width={300}
-        height={300}/>
-        <div className='product-image'>
-        <Media.Body>
+         <Media><img src={this.state.item.Image} alt={this.state.item.Image} width={300}height={300}/>
+        <Media.Body id="body">
         <h2>{this.state.item.Name}</h2>
           <p>Price: {this.state.item.Price} </p>
           <Button href='/items'>Back to All items</Button>
        </Media.Body>
-       </div>
        </Media>
         </Row>
       )

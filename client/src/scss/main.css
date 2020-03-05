@@ -67,6 +67,10 @@ ul li {
   text-align: left;
 }
 
+.row .media {
+  margin-top: 5px;
+}
+
 div .footer-fluid {
   text-align: center;
   background-color: #63637F;

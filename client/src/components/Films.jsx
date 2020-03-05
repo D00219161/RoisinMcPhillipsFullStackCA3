@@ -3,7 +3,7 @@ import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import {Link}             from '@reach/router';
 import * as Config        from '../config.json';
 import {Button}           from 'react-bootstrap';
-
+import Columns            from './Columns';
 class Films extends React.Component {
 
   // #######################################################
@@ -32,7 +32,9 @@ class Films extends React.Component {
       );
     } else {
       return (
+        
         <div className='product-list pt-3 pl-3 pr-3'>
+        <Columns />
           <h1>All Films in the database</h1>
           <ul>
             {this.state.films.map(film => (

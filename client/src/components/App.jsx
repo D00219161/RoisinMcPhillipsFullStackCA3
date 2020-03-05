@@ -15,7 +15,6 @@ import Item        from './Item';
 import Footer   from './Footer';
 import Cart     from '../lib/Cart';
 import Slider   from './Slider';
-import Columns  from './Columns';
 import '../scss/main.css';
 class App extends React.Component {
 
@@ -30,7 +29,6 @@ class App extends React.Component {
 <Navagation cart={this.state.cart}/> 
         <Router>
         <Slider path='/' />
-        <Columns path='/' />
         <Films   path='/films' />
         <Film    path='/film/:filmID' />
         <AddFilm path='/add-film/' />
@@ -43,6 +41,7 @@ class App extends React.Component {
         <Items       path='/items' />
         <Item       path='/item/:itemID' />
         </Router>
+        
         <Footer />
         </div>
     );

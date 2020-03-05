@@ -1,5 +1,5 @@
 import React       from 'react';
-import Product     from './Product';
+import Item        from './Item';
 import * as Config from '../config.json'
 
 class ItemList extends React.Component {
@@ -66,7 +66,7 @@ class ItemList extends React.Component {
     // Fetch from PHP script and update the products state value
     // React will automatically 'react' to this change and re-render
     // the ProductList component.
-    fetch(Config.api.getItems) //api
+    fetch(Config.itemsAPI.getItems) //api
       .then (res  => res.json())
       .then (json => {
         this.setState({items: json});

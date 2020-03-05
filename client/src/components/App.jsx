@@ -10,6 +10,7 @@ import AddActor from './AddActor';
 import Directors   from './Directors';
 import Director    from './Director';
 import AddDirector from './AddDirector';
+import Items      from './Items';
 import Footer   from './Footer';
 import Cart     from '../lib/Cart';
 import '../scss/main.css';
@@ -34,6 +35,8 @@ class App extends React.Component {
         <Directors   path='/directors' />
         <Director    path='/director/:directorID' />
         <AddDirector path='/add-director/' />
+        <Items      path='/items'/>
+        <Items      path='/item/:itemID'/>
         </Router>
         <Footer />
         </div>

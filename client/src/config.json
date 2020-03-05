@@ -1,6 +1,5 @@
 {
   "filmsAPI": ":3000/films",
   "actorsAPI": ":3000/actors",
-  "directorsAPI": ":3000/directors",
-  "itemsAPI": "3000/items"
+  "directorsAPI": ":3000/directors"
 }

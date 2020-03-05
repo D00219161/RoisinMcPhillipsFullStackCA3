@@ -10,6 +10,14 @@ form {
   text-align: center;
 }
 
+body h1 {
+  text-align: center;
+}
+
+.directors {
+  text-align: center;
+}
+
 div.product-image {
   text-align: center;
   height: 100%;
@@ -32,6 +40,10 @@ div.product-image img {
 .directors.product-image {
   width: 400px;
   height: 400px;
+}
+
+div.card.mb-4 {
+  margin-top: 15px;
 }
 
 .footer-fluid {

@@ -2,6 +2,7 @@ import React              from 'react';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import {Link}             from '@reach/router';
 import * as Config        from '../config.json';
+import {Button}           from 'react-bootstrap';
 
 class Directors extends React.Component {
   // #######################################################
@@ -37,7 +38,7 @@ class Directors extends React.Component {
                 <li key={`director_${director._id}`}><Link to={`/director/${director._id}`}>{director.Name}</Link></li>
             ))}
           </ul>
-          <p><Link to='/add-director'>Add a new Director</Link></p>
+          <p><Button href='/add-director'>Add a new Director</Button></p>
         </div>
       )
     }

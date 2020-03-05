@@ -2,7 +2,7 @@ import React              from 'react';
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import * as Config        from '../config.json';
-import {Media, Row}   from 'react-bootstrap';
+import {Media, Row, Button}   from 'react-bootstrap';
 //import AddToCartButton from './AddToCartButton'; <AddToCartButton item={this.state.item} cart={this.props.cart} />
 
 class Item extends React.Component {
@@ -41,7 +41,7 @@ class Item extends React.Component {
         <Media.Body>
         <h2>{this.state.item.Name}</h2>
           <p>Price: {this.state.item.Price} </p>
-          <Link to='/items'>Back to All items</Link>
+          <Button href='/items'>Back to All items</Button>
        </Media.Body>
        </div>
        </Media>

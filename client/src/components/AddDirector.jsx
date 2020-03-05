@@ -1,7 +1,8 @@
 import React              from 'react';
 import {navigate, Link}   from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
-import * as Config        from '../config.json'
+import * as Config        from '../config.json';
+import  {Button}          from 'react-bootstrap';
 
 class AddDirector extends React.Component {
 
@@ -92,7 +93,7 @@ class AddDirector extends React.Component {
             </div>
 
           </form>
-          <Link to='/directors'>Back to All directors</Link>
+          <Button href='/directors'>Back to All directors</Button>
         </div>
       );
     }

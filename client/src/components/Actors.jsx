@@ -2,6 +2,7 @@ import React              from 'react';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import {Link}             from '@reach/router';
 import * as Config        from '../config.json';
+import  {Button}          from 'react-bootstrap';
 
 class Actors extends React.Component {
 
@@ -38,7 +39,7 @@ class Actors extends React.Component {
                 <li key={`actor_${actor._id}`}><Link to={`/actor/${actor._id}`}>{actor.Name}</Link></li>
             ))}
           </ul>
-          <p><Link to='/add-actor'>Add a new Actor</Link></p>
+          <p><Button href='/add-actor'>Add a new Actor</Button></p>
         </div>
       )
     }

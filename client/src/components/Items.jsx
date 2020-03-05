@@ -2,6 +2,7 @@ import React              from 'react';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import {Link}             from '@reach/router';
 import * as Config        from '../config.json';
+import {Button}            from 'react-bootstrap';
 
 class Items extends React.Component {
 
@@ -38,7 +39,7 @@ class Items extends React.Component {
                 <li key={`item_${item._id}`}><Link to={`/item/${item._id}`}>{item.Name}</Link></li>
             ))}
           </ul>
-          <p><Link to='/items'>Back to all items</Link></p>
+          <p><Button href='/items'>Back to all items</Button></p>
         </div>
       )
     }

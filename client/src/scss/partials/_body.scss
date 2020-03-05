@@ -18,31 +18,37 @@ div.product-image img {
   height      : 440px;
 }
 
-div.product-image img {
-  width       : 338px;
-  height      : 440px;
-}
-
-.directors{text-align: center;}
-
 .directors.product-image{
   width: 400px;
   height: 400px;
 }
 
-
 div.card.mb-4{
   margin-top: 15px;
 }
 
-#toast
-{
-  height: '100px';
-  float: right;
+body{
+.badge{
+  background-color: $badge-color;
+}}
+
+h3{color: $h3-color;}
+
+.button{
+  .btn-primary{
+  text-align: center;
   position: relative;
+  background-color: $button-color;
+
+}}
+
+.btn-primary{
+  background-color: $button-color;
+  border-color: $button-color;
 }
 
-#slider-image{
-  width:1750px;
-  height:auto;
+ul{
+  li{
+    text-align: left;
+  }
 }

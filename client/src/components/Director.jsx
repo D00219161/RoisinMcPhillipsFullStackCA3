@@ -2,7 +2,7 @@ import React              from 'react';
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import * as Config        from '../config.json';
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Button} from 'react-bootstrap'
 
 class Director extends React.Component {
 
@@ -44,7 +44,7 @@ class Director extends React.Component {
           <p>Nationality: {this.state.director.Nationality}</p>
           <p>Genre: {this.state.director.Genres}</p>
           <p>Films: {this.state.director.Films}</p>
-          <Link to='/directors'>Back to All directors</Link>
+          <Button href='/directors'>Back to All directors</Button>
          </div>
         </Col>
         </Row>

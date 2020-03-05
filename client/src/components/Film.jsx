@@ -2,7 +2,7 @@ import React              from 'react';
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import * as Config        from '../config.json';
-import {Col} from 'react-bootstrap/';
+import {Col, Button} from 'react-bootstrap/';
 
 class Film extends React.Component {
 
@@ -48,7 +48,7 @@ class Film extends React.Component {
           <p>Genre: {this.state.film.Genre}</p>
           <p>Director: {this.state.film.Director}</p>
           <p>Starring: {this.state.film.Starring}</p>
-          <Link to='/'>Back to All films</Link>
+          <p><Button href='/'>Back to All films</Button></p>
         </div>
         </div>
         </div>

@@ -1,12 +1,19 @@
 .navbar {
-  background-color: #E5FFF5;
+  background-color: #63637F;
   color: black;
   text-align: center;
   width: auto;
 }
 
-form {
-  padding-right: 2em;
+.navbar #toast {
+  height: 100px;
+  float: right;
+  margin-left: 140px;
+}
+
+.navbar .form-inline {
+  color: #FFFFFF;
+  padding-right: 35px;
   text-align: center;
 }
 
@@ -28,15 +35,6 @@ div.product-image img {
   height: 440px;
 }
 
-div.product-image img {
-  width: 338px;
-  height: 440px;
-}
-
-.directors {
-  text-align: center;
-}
-
 .directors.product-image {
   width: 400px;
   height: 400px;
@@ -46,19 +44,33 @@ div.card.mb-4 {
   margin-top: 15px;
 }
 
-#toast {
-  height: '100px';
-  float: right;
-  position: relative;
+body .badge {
+  background-color: #0F0F14;
 }
 
-#slider-image {
-  width: 1750px;
-  height: auto;
+h3 {
+  color: #FFFFFF;
 }
 
-.footer-fluid {
+.button .btn-primary {
   text-align: center;
-  background-color: #A5CEBE;
+  position: relative;
+  background-color: #63637F;
+}
+
+.btn-primary {
+  background-color: #63637F;
+  border-color: #63637F;
+}
+
+ul li {
+  text-align: left;
+}
+
+div .footer-fluid {
+  text-align: center;
+  background-color: #63637F;
+  padding-top: 5px;
+  border-color: #000000;
 }
 /*# sourceMappingURL=main.css.map */

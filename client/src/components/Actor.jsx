@@ -38,13 +38,13 @@ class Actor extends React.Component {
         <h2 className='card-header'>{this.state.actor.Name}</h2>
         <div className='row'>
           <div className='col-12 col-md-3'>
-            <div className='product-image'>
+            <div className='product-image-actors'>
               <img src={this.state.actor.Image} alt={this.state.actor.Name} />
             </div>
           </div>
           <div className='col-12 col-md-9'>
             <div className='card-body'></div>
-          <p>DOB: {this.state.actor.DOB}</p>
+          <p>Date Of Birth: {this.state.actor.DOB}</p>
           <p>Age: {this.state.actor.Age}</p>
           <p>Nationality: {this.state.actor.Nationality}</p>
           <p>Films: {this.state.actor.Films}</p>

@@ -39,7 +39,7 @@ class Director extends React.Component {
   <Col xs><h1>{this.state.director.Name}</h1>
   <div className='product-image'>
   <img src={this.state.director.Image} alt={this.state.director.Image} />
-          <p>DOB: {this.state.director.DOB}</p>
+          <p>Date Of Birth: {this.state.director.DOB}</p>
           <p>Age: {this.state.director.Age}</p>
           <p>Nationality: {this.state.director.Nationality}</p>
           <p>Genre: {this.state.director.Genres}</p>

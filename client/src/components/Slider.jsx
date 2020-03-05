@@ -9,7 +9,7 @@ class Slider extends Component {
   <Carousel.Item>
     <img
       className="w-100"
-      src="https://static.rogerebert.com/uploads/review/primary_image/reviews/dark-waters-movie-review-2019/hero_dark-waters-movie-review-2019.jpg" width="800px" height="500px"
+      src="https://static.rogerebert.com/uploads/review/primary_image/reviews/dark-waters-movie-review-2019/hero_dark-waters-movie-review-2019.jpg" width="800px" height="550px"
       alt-text="dark waters"
     />
     <Carousel.Caption>
@@ -22,7 +22,7 @@ class Slider extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://www.cocktailsandcocktalk.com/wp-content/uploads/2018/11/kj-feat.jpg"  width="800px" height="500px"
+      src="https://www.cocktailsandcocktalk.com/wp-content/uploads/2018/11/kj-feat.jpg"  width="800px" height="550px"
       alt-text="kj apa"
     />
 
@@ -36,7 +36,7 @@ class Slider extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2019-03/gettyimages-1134403896.jpg?itok=j-td2oLl&h=65d2ff79" width="800px" height="500px"
+      src="https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2019-03/gettyimages-1134403896.jpg?itok=j-td2oLl&h=65d2ff79" width="800px" height="550px"
       alt="justin baldoni"
     />
 

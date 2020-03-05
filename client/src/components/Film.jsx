@@ -48,7 +48,7 @@ class Film extends React.Component {
           <p>Genre: {this.state.film.Genre}</p>
           <p>Director: {this.state.film.Director}</p>
           <p>Starring: {this.state.film.Starring}</p>
-          <p><Button href='/'>Back to All films</Button></p>
+          <p><Button href='/films'>Back to All films</Button></p>
         </div>
         </div>
         </div>

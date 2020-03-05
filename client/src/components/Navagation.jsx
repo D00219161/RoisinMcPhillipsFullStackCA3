@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, Form} from 'react-bootstrap';
 import ViewCart from './ViewCart';
-import Stripe   from './Stripe';
+import StripeCheckout   from './Stripe';
 
 class NavMenu extends Component {
 
@@ -16,9 +16,9 @@ class NavMenu extends Component {
       <Nav.Link href="#">Shop Merch</Nav.Link>
     </Nav>
     <Form inline>
-      <ViewCart cart={this.props.cart} />
+    <ViewCart cart={this.props.cart} />
     </Form>
-    <Stripe />
+    <StripeCheckout/>
   </Navbar>
     );
     

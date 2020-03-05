@@ -14,6 +14,8 @@ import Items       from './Items';
 import Item        from './Item';
 import Footer   from './Footer';
 import Cart     from '../lib/Cart';
+import Toast    from './Toast';
+import Slider   from './Slider';
 import '../scss/main.css';
 class App extends React.Component {
 
@@ -25,9 +27,11 @@ class App extends React.Component {
     return (
       <div className='App'>
 
-<Navagation cart={this.state.cart}/>
-      <Router>
-        <Films   path='/' />
+<Navagation cart={this.state.cart}/> 
+<Toast />
+        <Router>
+        <Slider path='/' />
+        <Films   path='/films' />
         <Film    path='/film/:filmID' />
         <AddFilm path='/add-film/' />
         <Actors   path='/actors' />

@@ -10,7 +10,7 @@ class NavMenu extends Component {
       <Navbar>
     <Navbar.Brand><img src="https://img.icons8.com/doodle/48/000000/movie.png"/>Movies</Navbar.Brand>
     <Nav className="nav">
-      <Nav.Link href="/">Films</Nav.Link>
+      <Nav.Link href="/films">Films</Nav.Link>
       <Nav.Link href="/actors">Actors</Nav.Link>
       <Nav.Link href="/directors">Directors</Nav.Link>
       <Nav.Link href="/items">Shop Merch</Nav.Link>

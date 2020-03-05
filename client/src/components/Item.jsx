@@ -2,7 +2,9 @@ import React              from 'react';
 import {Link}             from '@reach/router';
 import urlToCurrentDomain from '../lib/urlToCurrentDomain';
 import * as Config        from '../config.json';
-import {Col} from 'react-bootstrap/';
+import {Media, Row}   from 'react-bootstrap';
+//import AddToCartButton from './AddToCartButton'; <AddToCartButton item={this.state.item} cart={this.props.cart} />
+
 class Item extends React.Component {
 
   // #######################################################
@@ -32,23 +34,18 @@ class Item extends React.Component {
       );
     } else {
       return (
-        <Col md={12}>
-      <div className='card mb-4'>
-        <h2 className='card-header'>{this.state.item.Name}</h2>
-        <div className='row'>
-          <div className='col-12 col-md-3'>
-            <div className='product-image'>
-              <img src={this.state.item.Image} alt={this.state.item.Image} />
-            </div>
-          </div>
-          <div className='col-12 col-md-9'>
-          <div className='card-body'></div>
+          <Row>
+         <Media><img src={this.state.item.Image} alt={this.state.item.Image} width={300}
+        height={300}/>
+        <div className='product-image'>
+        <Media.Body>
+        <h2>{this.state.item.Name}</h2>
           <p>Price: {this.state.item.Price} </p>
           <Link to='/items'>Back to All items</Link>
-        </div>
-        </div>
-        </div>
-      </Col>
+       </Media.Body>
+       </div>
+       </Media>
+        </Row>
       )
     }
   }

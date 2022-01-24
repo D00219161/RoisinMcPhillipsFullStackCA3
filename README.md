@@ -8,4 +8,4 @@ There is videos, images and various elements added to make the site more appeali
 
 Created using React Native and Node on Visual Studio Code.
 Used Postman APIs for the Get, Post, Pull and Delete requests.
-Used a mySQL database to hold all data.
+Used Mongo database to hold all data.
